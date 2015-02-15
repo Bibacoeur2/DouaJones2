@@ -1,15 +1,8 @@
 $(document).on("pageinit", "#missions", function() {
 var socket=io.connect(adresse_serveur);
+
 $(document).on("pageinit", "#missionAchat", function() {
 
-var socket=io.connect(adresse_serveur);	
-
-//Déclaration des variables
-var argentDispOrdre;
-var dateProchBilanReel;
-var coursEntrep;
-var socket = io.connect(adresse_serveur);
- 
 //Affichage de l'argent disponible
 socket.on('resultGetArgentDisponibleJoueur', function(data) {
 	argentDispOrdre=data.argent_disponible
