@@ -1,3 +1,7 @@
+$(document).on("pageinit", "#missionAchat", function() {
+
+var socket=io.connect(adresse_serveur);	
+
 //Déclaration des variables
 var argentDispOrdre;
 var dateProchBilanReel;
@@ -385,5 +389,7 @@ $(document).on("pageshow", "#Entreprise", function() {
 	
 	socket.emit("getArgentDisponibleJoueur",idJoueur);
 	socket.emit("getCoursEntreprise", $('#entreprise_active').data('id_entreprise'));
+
+});
 
 });
