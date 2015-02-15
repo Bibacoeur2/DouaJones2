@@ -1,6 +1,14 @@
 $(document).on("pageinit", "#missions", function() {
 var socket=io.connect(adresse_serveur);
 
+$(document).on("click","#btn_emprunt", function(event) {
+		event.preventDefault();
+		event.stopImmediatePropagation();
+		$.mobile.changePage("#emprunt");
+		return false;
+	});
+	
+
 $(document).on("pageinit", "#missionAchat", function() {
 
 //Affichage de l'argent disponible
