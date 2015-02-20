@@ -1,25 +1,4 @@
-infowindow = new google.maps.InfoWindow();
-		
-		var content_infowindow
-		
-
-		function show_myInfowindow(entreprise,position) {
-			infowindow.close(map);
-			content_infowindow = '<div style="line-height:1.35;overflow:hidden;white-space:nowrap"><center class="departement"><b>'+entreprise.nom+'</b><br/></center><button id="checkin" disabled>Check-in</button><button id="info">Fiche entreprise</button></div>'
-			$('#infowindow_content').html(content_infowindow);
-			infowindow.setContent($('#infowindow_content').html());
-			// Replace our Info Window's position
-			infowindow.setPosition(position);
-			
-			
-			infowindow.open(map);
-			//Si la zone est accessible par le joueur, on autorise le check-in (si le joueur est la BMC, on autorise le checkin partout
-			if ((location_contained_or_edge(entreprise.Objet)) ||(google.maps.geometry.poly.containsLocation(position_joueur,Entreprise[1].Objet))) {
-				document.getElementById('checkin').disabled = false;
-			}
-			
-		} 
-
+var socket = io.connect(adresse_serveur);
 		function checkin(entreprise) {
 			var teleportation = false;
 			//Si le joueur se trouve à la BMC et qu'il fait un checkin dans une société à laquelle il n'a pas accès, on met le booléen "teleportation" à vrai
@@ -35,8 +14,90 @@ infowindow = new google.maps.InfoWindow();
 			teleportation : teleportation
 			});
 			
+			
 		}
 		socket.on('resultSetCheckin', function (result) {
 			alert(result);
 			socket.emit('getArgentDisponibleJoueur',idJoueur);
 			});
+			
+		var ok_ordre = false
+		function openinfo(entreprise) {
+			//On charge l'image de l'entreprise sur la page de l'entreprise
+			document.getElementById('image_entreprise').setAttribute('src',entreprise.srcImageentreprise);
+			if (entreprise.index == 1) {
+				document.getElementById('image_bmc').setAttribute('src',entreprise.srcImageentreprise);
+			}
+			//On écrit le nom de l'entreprise dans le header
+			$('#nom_entreprise').html(entreprise.nom);
+			//On écrit le nom de l'entreprise dans le champ nom où il faut passer l'ordre
+			$('#entreprise_active').html(entreprise.nom);
+			//On stocke l'id de l'entreprise sélectionnée
+			$('#entreprise_active').data("id_entreprise", entreprise.index);
+			//On modifie le texte du profil de l'entreprise
+			$('#texte_fiche_entreprise').text(entreprise.texteProfil);
+			
+			
+			//On regarde si le joueur se trouve à la BMC
+			var isAtBMC = false;
+			if (google.maps.geometry.poly.containsLocation(position_joueur,Entreprise[1].Objet)) {
+				isAtBMC = true;
+			}
+			
+			
+			//On affecte la variable isAtBMC à la page BMC profil pour savoir si on peut intéragir avec la boutique
+			
+			$('#bmcprofil').data("isAtBMC", isAtBMC);
+			
+			//On vérifie que l'on puisse bien passer un ordre
+				ok_ordre = true;		
+			if (document.getElementById('checkin').disabled == true) {				
+				ok_ordre = false;
+			}
+			
+			//On ferme l'infowindow	
+			infowindow.close(map);
+			//On affiche la page entreprise ou la page BMC
+			if (entreprise.index != 1 && isAtBMC && !(location_contained_or_edge (entreprise.Objet)) ) {
+				//si le joueur se trouve à la bmc et qu'il sélectionne une autre entreprise, il ne peut pas passer d'ordre
+				ok_ordre = false;
+			}
+			if (entreprise.index != 1) {
+				$.mobile.changePage("#Entreprise");
+			}
+			else {
+				$.mobile.changePage("#bmcprofil");
+			}
+		}
+		 	
+			//On grise(respectivement dégrise) l'onglet passer un ordre si on est pas sur la zone
+			$(document).on("pagebeforeshow", "#Entreprise", function() {
+				$( "#tabs_entreprise" ).tabs({ active: 1 });
+				
+				if (ok_ordre==false) {	
+					$("#tabs_entreprise").tabs("option", "disabled", [2]);
+				}
+				else {
+					$( "#tabs_entreprise" ).tabs( "enable", 2 );
+				}
+				
+				//On affiche l'onglet profil par défaut
+				
+				
+				$("#tabs_entreprise").tabs( "option", "active", 1 );
+				
+			});
+			
+			$('#geolocation_icon').click(function (e) {
+				e.stopImmediatePropagation();
+				e.preventDefault();
+				if ((coordonnees_joueur.latitude !=0 ) && (coordonnees_joueur.longitude !=0) ) {
+					map.panTo(position_joueur);
+					map.setZoom(17);
+				}
+				return false;
+			});
+
+	
+//fin initialize
+}
