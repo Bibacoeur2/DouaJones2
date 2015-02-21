@@ -396,7 +396,7 @@ $(document).on("pageshow", "#Entreprise", function() {
 });
 
 });
-});
+
 
 //CHECK IN
 
@@ -408,5 +408,5 @@ $(document).on("click","#btn_checkin", function(event) {
 		return false;
 	});
 
-
+});
  
