@@ -505,5 +505,13 @@ var socket=io.connect(adresse_serveur);
 }
 });
 
+// il faut lier le code au dessus à un bouton grâce à la fonction suivante:
+$(document).on("click","#btn_checkin", function(event) {
+		event.preventDefault();
+		event.stopImmediatePropagation();
+		$.mobile.changePage("#missionCheckin");
+		return false;
+	});
+
 
  
