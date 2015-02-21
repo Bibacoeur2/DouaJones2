@@ -399,7 +399,7 @@ $(document).on("pageshow", "#Entreprise", function() {
 });
 
 //CHECK IN
-$(document).on("pageinit", "#missionCheckIn", function() {
+$(document).on("pageinit", "#missionCheckin", function() {
 var socket=io.connect(adresse_serveur);
 		function checkin(entreprise) {
 			var teleportation = false;
