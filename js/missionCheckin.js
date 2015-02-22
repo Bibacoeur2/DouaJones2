@@ -16,7 +16,7 @@ var socket=io.connect(adresse_serveur);
 			}
 			//On envoie les données du checkin
 			socket.emit('setCheckin',{
-			idEntreprise : entreprise.id_entreprise,
+			idEntreprise:$('#entreprise_active').data('id_entreprise'),
 			idJoueur : idJoueur,
 			teleportation : teleportation
 			});
