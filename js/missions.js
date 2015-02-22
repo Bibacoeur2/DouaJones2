@@ -402,11 +402,25 @@ $(document).on("pageshow", "#Entreprise", function() {
 
 // il faut lier le code au dessus à un bouton grâce à la fonction suivante:
 $(document).on("click","#btn_checkin", function(event) {
+	var socket=io.connect(adresse_serveur);
 		event.preventDefault();
 		event.stopImmediatePropagation();
 		$.mobile.changePage("#missionCheckin");
 		return false;
 	});
+	
+$(document).on("pageshow", "#Entreprise", function() {
+	var socket = io.connect(adresse_serveur);			
+	
+	socket.emit("getArgentDisponibleJoueur",idJoueur);
+	socket.emit("getCoursEntreprise", $('#entreprise_active').data('id_entreprise'));
+
+});
+socket.on('resultGetArgentDisponibleJoueur', function(data) {
+	argentDispOrdre=data.argent_disponible
+	argentDispOrdreAAfficher="Argent disponible : "+argentDispOrdre+" ฿"
+	$("#consult_argentDisp").text(argentDispOrdreAAfficher);	
+});
 
 });
  
