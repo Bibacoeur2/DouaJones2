@@ -408,19 +408,5 @@ $(document).on("click","#btn_checkin", function(event) {
 		$.mobile.changePage("#missionCheckin");
 		return false;
 	});
-	
-$(document).on("pageshow", "#Entreprise", function() {
-	var socket = io.connect(adresse_serveur);			
-	
-	socket.emit("getArgentDisponibleJoueur",idJoueur);
-	socket.emit("getCoursEntreprise", $('#entreprise_active').data('id_entreprise'));
-
-});
-socket.on('resultGetArgentDisponibleJoueur', function(data) {
-	argentDispOrdre=data.argent_disponible
-	argentDispOrdreAAfficher="Argent disponible : "+argentDispOrdre+" ฿"
-	$("#consult_argentDisp").text(argentDispOrdreAAfficher);	
-});
-
 });
  
