@@ -233,33 +233,30 @@ Bienvenue apprentis traders !
         <h1>Missions</h1>
       </div>
         <div class="ui-grid-a">
-<div class="ui-block-a" style="height:75px;"><a href="#missionAchat"><img src="img/tutoriel icone rouge.png" class="bouton_acc"></a></div>
-<div class="ui-block-b" style="height:75px;"><a href="#emprunt"><img src="img/carte icone rouge.png" class="bouton_acc"></a></div>
+                    <div class="ui-block-a" style="height:75px;"><a href="#missionAchat"><img src="img/mission_achat.png" class="bouton_acc"></a></div>
+                    <div class="ui-block-b" style="height:75px;"><a href="#emprunt"><img src="img/carte icone rouge.png" class="bouton_acc"></a></div>
+                    <div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Achat</div>
+                    <div class="ui-block-b" style="text-align:center;  margin-bottom:5px;">Emprunt</div>
+                    
+                    <div class="ui-block-a" style="height:75px;"><a href="#missionCapacite"><img src="img/mission_achat.png" class="bouton_acc"></a></div>
+                    <div class="ui-block-b" style="height:75px;"><a href="#chat"><img src="img/social icone rouge.png" class="bouton_acc"></a></div>
 
-<div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Achat</div>
-<div class="ui-block-b" style="text-align:center;  margin-bottom:5px;">Emprunt</div>
-
-<div class="ui-block-a" style="height:75px;"><a href="#missionCheckin"><img src="img/mon compte icone rouge.png" class="bouton_acc"></a></div>
-<div class="ui-block-b" style="height:75px;"><a href="#chat"><img src="img/social icone rouge.png" class="bouton_acc"></a></div>
-
-<div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Check-In</div>
-<div class="ui-block-b" style="text-align:center; margin-bottom:5px;">Vente</div>
-
-<div class="ui-block-a" style="height:75px;"><a href="#classement"><img src="img/Classement rouge.png" class="bouton_acc"></a></div>
-
-<div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Charge/Capacité</div>
+                    <div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Mission Capacité</div>
+                    
+                    <div class="ui-block-b" style="text-align:center; margin-bottom:5px;">Social</div>
+                    
+                    <div class="ui-block-a" style="height:75px;"><a href="#classement"><img src="img/Classement rouge.png" class="bouton_acc"></a></div>
+                    <div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Classement</div>
                  
             
                 </div>
         </div>
        
-      
-       
         <!--Mission emprunt  -->
   <div data-role="page" id="emprunt">
 	<div data-role="header">
 		<a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
-    	<h1>Mission Emprunt</h1>
+    	<h1>BMC Investment</h1>
 	</div>
 	<div data-role="content">
     	<form>
@@ -292,7 +289,57 @@ Bienvenue apprentis traders !
 </div>
 </div>
 
+  <!-- Mission Capacité-->
+  <div data-role="page" id="missionCapacite">
+    
+    <div data-role="header">
+      <a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
+      <h1>Mission Capacité</h1>
+    </div>
+
+  <div data-role="content">
+      <div id="fixerCapacite">
+      </div>
+      <div id="rangeCapacite" style="display:none">
+
+          <label for="newCapacite">Fixer la capacité</label>
+          <input type="number" name="newCapacite" id="newCapacite" value=""  />
+          <button id="btn_modif_capa">Enregistrer les capacités</button>
+        <table id="table_capacite" data-role="table" data-mode="columtoggle" class="ui-body-d ui-shadow table-stripe">
+          
+          <thead>
+              <tr class="ui-bar-a">
+                  <th>Entreprise</th>
+                  <th>Capacite</th>
+              </tr>
+          </thead>
+         
+          <tbody>
+                <tr>
+                </tr>
+          </tbody>
+        </table>
+       
+      </div>
         
+        <div id="dissolutionSociete">
+          <a href="#confirmerDissoudre" data-rel="popup" class="ui-shadow ui-btn ui-corner-all">Dissoudre la société</a>
+        </div>
+
+        <div data-role="popup" id="confirmerDissoudre" data-theme="a" class="ui-content" style="max-width:340px; padding-bottom:2em;">
+            <h2>Etes-vous sur de dissoudre l'entreprise ?</h2>
+            <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="dissoudreSociete">Oui</a>
+            <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="pasDissoudreSociete">Non, je déconne</a>   
+        </div> 
+        
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+      <h4 class="argent_dispo" style="color:#D6B430"></h4>
+  </div>
+</div>
+
+
   <!-- Mission Achat -->
  <div data-role="page" id="missionAchat">
       <div data-role="header">
@@ -339,22 +386,19 @@ Bienvenue apprentis traders !
           
                 <!-- Type d'ordre  -->
                           
-  
-                          <span TITLE="Type d'ordre">veuillez choisir le type d'ordre souhaité</span>
                           <label for="select-custom-51">Type d'ordre</label>
                           <select name="select-custom-51" id="selectordre" data-native-menu="false">
-                              <!--<option value="cours_limite" selected="selected">Ordre à cours limité</option>-->
-                              <option title="cours_limite" value="cours_limite" >Ordre exécuté que si le cours du titre atteint ou dépasse le cours fixé.</option>
-                              <!--option value="au_marche">Ordre au marché </option>-->
-                              <option title="au_marche" value="au_marche" >Ordre exécuté sans limite de prix, dans la limite des quantités disponibles.</option>
-                              <!--option value="seuil_declenchement">Ordre à déclenchement </option>-->
-                              <option title="seuil_declenchement" value="seuil_declenchement" >Ordre exécuté a` partir d'un cours déterminé. </option>
-                              <!--option value="meilleure_limite">Ordre à la meilleure limite</option>-->
-                              <option title="meilleure_limite" value="meilleure_limite" >Ordre exécuté  au prix du premier vendeur, dans la limite des quantités disponibles./</option>
+                              <option value="Veuiller sélectionner un type d'ordre" selected="selected">Veuillez choisir un type d'ordre</option>
+                              <!--<option value="cours_limite" selected="selected">Ordre à cours limité</option>-->
+                              <option title="Ordre exécuté que si le cours du titre atteint ou dépasse le cours fixé." value="cours_limite" > Ordre à cours limité</option>
+                              <!--option value="au_marche">Ordre au marché </option>-->
+                              <option title="Ordre exécuté sans limite de prix, dans la limite des quantités disponibles." value="au_marche" >Ordre au marché</option>
+                              <!--option value="seuil_declenchement">Ordre à déclenchement </option>-->
+                              <option title="Ordre exécuté à partir d'un cours déterminé." value="seuil_declenchement" >Ordre a` déclenchement </option>
+                              <!--option value="meilleure_limite">Ordre à la meilleure limite</option>-->
+                              <option title="Ordre exécuté  au prix du premier vendeur, dans la limite des quantités disponibles." value="meilleure_limite" > Ordre à la meilleure limite</option>
 
-                             
-
-                        </select>
+                          </select>
                       
                       
                      <ul data-role="listview" data-inset="true">
@@ -370,27 +414,27 @@ Bienvenue apprentis traders !
                              </div>
                           </li>  
                           
-    <!--TYPE DE DECLENCHEMENT-->  
-                          <span TITLE="Type de déclenchement">Veuillez choisir le type de déclenchement souhaité</span>                 
+                <!--TYPE DE DECLENCHEMENT-->  
+                        <!--  <span TITLE="Type de déclenchement">Veuillez choisir le type de déclenchement souhaité</span> -->                
                           <li class="ui-field-contain" style="display:none;" id="declenchement">
                             <fieldset data-role="controlgroup" data-type="horizontal" style="border:none;" id="typedeclenchement">
-                                <legend>Type de déclenchement</legend>
+                                <legend>Type de déclenchement</legend>
                                 <input type="radio" name="radio-choice-type-declenchement" id="radio-choice-h-2a" value="Seuil" checked="checked">
                                 <label for="radio-choice-h-2a">Seuil</label>
                                 <input type="radio" name="radio-choice-type-declenchement" id="radio-choice-h-2b" value="Plage">
                                 <label for="radio-choice-h-2b">Plage</label>
                             </fieldset>  
                                                     
-      <!--SAISIE DU SEUIL OU DE LA PLAGE-->    
+                <!--SAISIE DU SEUIL OU DE LA PLAGE-->    
 
-        <!--SAISIE DU SEUIL-->    
+                   <!--SAISIE DU SEUIL-->    
       
                             <label for="vseuil" style="margin-top:10px;"id="vseuillabel">Saisir le seuil
                             </label>
                             <textarea cols="40" rows="8" name="textarea" id="vseuil" style="width:80px; height:40px; resize:none;  margin-top:10px;">
                             </textarea>  
 
-     <!--SAISIE DE LA PLAGE-->    
+                    <!--SAISIE DE LA PLAGE-->    
                             
                             <div data-role="rangeslider" style="margin-top:10px; display:none;" id="vplage">
                               <label for="range-10a" id="vplagelabel" style="display:none; margin-top:10px;">Saisir la plage
@@ -402,27 +446,27 @@ Bienvenue apprentis traders !
                               </div>
                           
                           </li>
-      <!--NOMBRE-->
+                    <!--NOMBRE-->
                          <span TITLE="NbAction">Veuillez saisir le nombre d'action souhaité</span>
                          <li class="ui-field-contain">
                               <label for="Nombre">Nombre</label>
                               <input type="range" name="slider" id="Nombre" value="1" min="1" max="100"  />
                           </li>
                           
-      <!--Date de validite-->
-                          <span TITLE="DateValidité">Veuillez choisir la date de passation de votre ordre</span>
+                <!--Date de validite-->
+                          <span TITLE="DateValidité">Veuillez choisir la date limite à laquelle votre ordre sera toujours valide</span>
                           <li class="ui-field-contain">                 
                               <fieldset data-role="controlgroup" data-type="horizontal" data-mini="false" id="validite" style="border:none">
-                                  <legend>Date de validité</legend>
+                                  <legend>Date de validité</legend>
                                   <input type="radio" name="radio-choice-type-date" id="radio-choice-1" value="Aujourdhui" checked="true" >
                                   <label for="radio-choice-1">Aujourd'hui</label>
                                   <input type="radio" name="radio-choice-type-date" id="radio-choice-2" value="Date">
                                   <label for="radio-choice-2">Date</label>
-                                  <input type="radio" name="radio-choice-type-date" id="radio-choice-3" value="Révocation">
-                                  <label for="radio-choice-3">Révocation</label>
+                                  <input type="radio" name="radio-choice-type-date" id="radio-choice-3" value="Révocation">
+                                  <label for="radio-choice-3">Révocation</label>
                               </fieldset>
                               
-      <!-- Date Picker -->
+                <!-- Date Picker -->
                               
                               <div style="margin-top:10px">
                                   <label for="saisiedate" id="legendedate"></label>
@@ -431,7 +475,7 @@ Bienvenue apprentis traders !
                           </li>
                       </ul>
                       
-      <!-- Bouton d'envoi -->
+                <!-- Bouton d'envoi -->
                       
                        <div class="ui-field-contain">
                           <input type="submit" value="Passer ordre" />
@@ -440,54 +484,8 @@ Bienvenue apprentis traders !
      
     </div>
 </div> 
- <!--Mission Check-In-->
- <div data-role="page" id="missionCheckin">
-	<div data-role="header">
-	<a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
-    	<h1>Mission Check In</h1>
-	</div>
-	<div data-role="content">
-	<form>
-	 <label for="select-custom-100">Entreprise</label>
-                        <select name="select-custom-100" id="Selectentreprise" data-native-menu="false">
-                              <option value="Veuiller sélectionner une entreprise" selected="selected">Veuillez sélectionner une entreprise</option>
-                              <option value="Hill Tone">Hill Tone</option>
-                              <option value="Genius Electrics">Genius Electrics</option>
-                              <option value="SoTech Materials">SoTech Materials</option>
-                              <option value="ITech">ITech</option>
-                              <option value="Miam Inc.">Miam Inc.</option>
-                              <option value="Campanule">Campanule</option>
-                              <option value="Wilbedon & Co">Wilbedon & Co</option>
-                              <option value="Blue Telecom">Blue Telecom</option>
-                              <option value="Green Energy & Co">Green Energy & Co</option>
-                              <option value="Biotech">Biotech</option>
-                              <option value="Total Logistics">Total Logistics</option>
-                              <option value="Brodewei">Brodewei</option>
-                              <option value="Center Park">Center Park</option>
-                              <option value="Mech. Entreprise">Mech. Entreprise</option>
-                              <option value="Club Mad">Club Mad</option>
-                              <option value="Sport Center">Sport Center</option>
-                              <option value="Leonard Construction">Leonard Construction</option>
-                              <option value="Doua Postal">Doua Postal</option>
-                              <option value="ORPIste">ORPIste</option>
-                              <option value="Palais des Congrès">Palais des Congrès</option>
-                              <option value="Airboost">Airboost</option>
-                              <option value="Lion Formation">Lion Formation</option>
-                              <option value="Pedro de Fermat">Pedro de Fermat</option>
-                              <option value="Badison Square Garden">Badison Square Garden</option>
-                              <option value="Formula One">Formula One</option>
-
-                          </select>  
-					  
-<input type="submit" value="Check-In" id="btn_checkin"/>
-</form>
-</div>
-<div data-role="footer">
-    <h4 class="argent_dispo" style="color:#D6B430"></h4>
-</div>
-
- 
-</div>
+   
+    
     
 <!-- Carte -->
 
