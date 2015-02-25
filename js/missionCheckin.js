@@ -1,10 +1,5 @@
 $(document).on("pageinit", "#missionCheckin", function() {
-	$(document).on("pageshow", "#Entreprise", function() {
-	var socket = io.connect(adresse_serveur);			
 	
-	socket.emit("getArgentDisponibleJoueur",idJoueur);
-	socket.emit("getCoursEntreprise", $('#entreprise_active').data('id_entreprise'));
-
 var socket=io.connect(adresse_serveur);
 		function checkin(entreprise) {
 			var teleportation = false;
@@ -16,11 +11,10 @@ var socket=io.connect(adresse_serveur);
 			}
 			//On envoie les données du checkin
 			socket.emit('setCheckin',{
-			idEntreprise:$('#entreprise_active').data('id_entreprise'),
+			idEntreprise:entreprise.index,
 			idJoueur : idJoueur,
 			teleportation : teleportation
 			});
-			
 			
 		}
 		socket.on('resultSetCheckin', function (result) {
