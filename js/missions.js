@@ -401,7 +401,7 @@ $(document).on("pageshow", "#Entreprise", function() {
 //CHECK IN
 $(document).on("pageinit", "#missionCheckin", function() {
 
-	idEntreprise:$('#entreprise_active').data('id_entreprise'),
+	idEntreprise:$('#Selectentreprise').data('id_entreprise'),
         sens:$('#select-custom-17').val(),					 
 
 	var socket=io.connect(adresse_serveur);
