@@ -401,8 +401,6 @@ $(document).on("pageshow", "#Entreprise", function() {
 //CHECK IN
 $(document).on("pageinit", "#missionCheckin", function() {
 
-	idEntreprise:$('#Selectentreprise').data('id_entreprise'),
-        sens:$('#select-custom-17').val(),					 
 
 	var socket=io.connect(adresse_serveur);
 		function checkin(entreprise) {
@@ -415,7 +413,7 @@ $(document).on("pageinit", "#missionCheckin", function() {
 			}
 			//On envoie les données du checkin
 			socket.emit('setCheckin',{
-			idEntreprise:entreprise.index,
+			idEntreprise:$('#Selectentreprise').data("id-entreprise",entreprise.index),
 			idJoueur : idJoueur,
 			teleportation : teleportation
 			});
