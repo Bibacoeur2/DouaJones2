@@ -1,4 +1,4 @@
-$(document).on("pageinit", "#missionCheckin", function() {
+$(document).on("click", "#checkin", function(event) {
 var Entreprise = [];
 		Entreprise[0] = {Objet :GI,
 						 nom : "Total Logistics",
