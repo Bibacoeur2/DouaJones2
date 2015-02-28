@@ -525,24 +525,35 @@ var Entreprise = [];
 						 Id=25,
 						 };
 	var socket=io.connect(adresse_serveur);
-		function checkin(Entreprise[]) {
+		function checkin(Entreprise) {
 		
-			if($('#Selectentreprise option:selected').val()== "Total Logistics") 
+			if($('#select-custom-100').val()== "Total Logistics") 
          		//On envoie les données du checkin
 			socket.emit('setCheckin',{
-			idEntreprise : Entreprise[0].Id, //si ca ne marche pas on met directement le chiffre de l'ID
+			idEntreprise : 0, //si ca ne marche pas on met directement le chiffre de l'ID
 			idJoueur : idJoueur,
 			});
-			 
-			 else if($('#Selectentreprise option:selected').val()== "Banque Mondiale du Commerce") 
+			 else if($('#select-custom-100 option:selected').val()== "Banque Mondiale du Commerce") 
          		
 					//On envoie les données du checkin
 					socket.emit('setCheckin',{
-					idEntreprise : Entreprise[1].Id,
+					idEntreprise : 1,
 					idJoueur : idJoueur,
-					});	
-			
-		
+					});
+				else if('#select-custom-100 option:selected').val()== "Green Energy & Co")
+						
+					//On envoie les données du checkin
+					socket.emit('setCheckin',{
+					idEntreprise : 2,
+					idJoueur : idJoueur,
+					});
+					else if('#select-custom-100 option:selected').val()== "Brodewei")
+						
+					//On envoie les données du checkin
+					socket.emit('setCheckin',{
+					idEntreprise : 5,
+					idJoueur : idJoueur,
+					});
 			
 		}
 		socket.on('resultSetCheckin', function (result) {
