@@ -125,12 +125,13 @@ var Entreprise = [];
 						 };
 	var socket=io.connect(adresse_serveur);
 		function checkin(Entreprise) {
-		
+		var teleportation = false;
 			if($('#select-custom-100').val()== "Total Logistics") 
          		//On envoie les données du checkin
 			socket.emit('setCheckin',{
 			idEntreprise : 0, //si ca ne marche pas on met directement le chiffre de l'ID
 			idJoueur : idJoueur,
+			teleportation:teleportation
 			});
 			 else if($('#select-custom-100 option:selected').val()== "Banque Mondiale du Commerce") 
          		
@@ -138,6 +139,7 @@ var Entreprise = [];
 					socket.emit('setCheckin',{
 					idEntreprise : 1,
 					idJoueur : idJoueur,
+					teleportation:teleportation
 					});
 				else if('#select-custom-100 option:selected').val()== "Green Energy & Co")
 						
@@ -145,6 +147,7 @@ var Entreprise = [];
 					socket.emit('setCheckin',{
 					idEntreprise : 2,
 					idJoueur : idJoueur,
+					teleportation:teleportation
 					});
 					else if('#select-custom-100 option:selected').val()== "Brodewei")
 						
@@ -152,6 +155,7 @@ var Entreprise = [];
 					socket.emit('setCheckin',{
 					idEntreprise : 5,
 					idJoueur : idJoueur,
+					teleportation:teleportation
 					});
 			
 		}
