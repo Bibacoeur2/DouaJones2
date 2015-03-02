@@ -129,7 +129,7 @@ var Entreprise = [];
 			if($('#select-custom-100').val()== "Total Logistics") 
          		//On envoie les données du checkin
 			socket.emit('setCheckin',{
-			idEntreprise : 0, //si ca ne marche pas on met directement le chiffre de l'ID
+			idEntreprise = 0, //si ca ne marche pas on met directement le chiffre de l'ID
 			idJoueur : idJoueur,
 			teleportation:teleportation
 			});
@@ -137,7 +137,7 @@ var Entreprise = [];
          		
 					//On envoie les données du checkin
 					socket.emit('setCheckin',{
-					idEntreprise : 1,
+					idEntreprise = 1,
 					idJoueur : idJoueur,
 					teleportation:teleportation
 					});
@@ -145,7 +145,7 @@ var Entreprise = [];
 						
 					//On envoie les données du checkin
 					socket.emit('setCheckin',{
-					idEntreprise : 2,
+					idEntreprise = 2,
 					idJoueur : idJoueur,
 					teleportation:teleportation
 					});
@@ -153,7 +153,7 @@ var Entreprise = [];
 						
 					//On envoie les données du checkin
 					socket.emit('setCheckin',{
-					idEntreprise : 5,
+					idEntreprise = 5,
 					idJoueur : idJoueur,
 					teleportation:teleportation
 					});
