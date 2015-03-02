@@ -231,28 +231,13 @@ var Entreprise = [];
 				
 			});
 			
-			$('#geolocation_icon').click(function (e) {
-				e.stopImmediatePropagation();
-				e.preventDefault();
-				if ((coordonnees_joueur.latitude !=0 ) && (coordonnees_joueur.longitude !=0) ) {
-					map.panTo(position_joueur);
-					map.setZoom(17);
-				}
-				return false;
-			});
+		
 
 	
 //fin initialize
 }
 });
-// Envoyer demande au serveur pour récupérer les données nécessaures
-$(document).on("pageshow", "#Entreprise", function() {
-	var socket = io.connect(adresse_serveur);			
-	
-	socket.emit("getArgentDisponibleJoueur",idJoueur);
-	socket.emit("getCoursEntreprise", $('#entreprise_active').data('id_entreprise'));
 
-});
 
 
 // il faut lier le code au dessus à un bouton grâce à la fonction suivante:
