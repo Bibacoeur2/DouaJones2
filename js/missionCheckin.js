@@ -1,4 +1,6 @@
 $(document).on("click", "#checkin", function(event) {
+	event.preventDefault();
+	event.stopImmediatePropagation();
 var Entreprise = [];
 		Entreprise[0] = {Objet :GI,
 						 nom : "Total Logistics",
@@ -163,23 +165,6 @@ var Entreprise = [];
 			alert(result);
 			socket.emit('getArgentDisponibleJoueur',idJoueur);
 			});
-			
-	
-			
-			
-		
-		
-			
-			
-		
-
-	
-
-});
-
-
-
-
 	
 });
  
