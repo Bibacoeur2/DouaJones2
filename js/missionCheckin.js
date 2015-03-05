@@ -1,4 +1,4 @@
-$(document).on("click", "#checkin", function(event) {
+/*$(document).on("click", "#checkin", function(event) {
 	event.preventDefault();
 	event.stopImmediatePropagation();
 var Entreprise = [];
