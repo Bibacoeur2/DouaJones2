@@ -103,25 +103,25 @@ Bienvenue apprentis traders !
 <!-- MESSAGES EVENEMENTS -->
 
 <!-- Evénements à la BMC -->
-<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
+<!--<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
 Cette semaine à la Bibliotèque Marie Curie:  
 	<img src="img/BMC.png" style= "height:50px; width:50px;"/> 
 	</font>
-</marquee> 
+</marquee> -->
 
 <!--Forum Rhônes Alpes -->
-<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
+<!--<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
 Le Forum Rhône-Alpes est le lieu privilégié d'échanges entre les élèves-ingénieurs et les entreprises. Venez nombreux au Double Mixte le 4 et 5 Mars.
 	<img src="img/alpes.png" style= "height:50px; width:50px;"/> 
 	</font>
-</marquee> 
+</marquee> -->
 
 <!--Gala-->
-<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
+<!--<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
 GALA: Rendez-vous le 28 Février à la Cité Internationale, Centre des congrès de Lyon!!
 	<img src="img/GALA.png" style= "height:50px; width:50px;"/> 
 	</font>
-</marquee> 
+</marquee> -->
 
 <!-- 24h de l'INSA -->
 <marquee direction="left" scrollamount="5"> <font color="#F6CECE">
@@ -231,7 +231,7 @@ Bienvenue apprentis traders !
                     <div class="ui-block-a" style="text-align:center ; margin-bottom:5px;">Missions</div>
                     <div class="ui-block-b" style="text-align:center; margin-bottom:5px;">Mon Profil</div>
                     <div class="ui-block-a" style="height:75px;"><a href="#chat"><img src="img/social icone rouge.png" class="bouton_acc"></a></div>
-                    <div class="ui-block-b" style="height:75px;"><a href="#vente"><img src="img/Classement rouge.png" class="bouton_acc"></a></div>
+                    <div class="ui-block-b" style="height:75px;"><a href="#classement"><img src="img/Classement rouge.png" class="bouton_acc"></a></div>
                     <div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Chat</div>
                     <div class="ui-block-b" style="text-align:center; margin-bottom:5px;">Classement</div>
             
@@ -456,7 +456,7 @@ Bienvenue apprentis traders !
 
                           </select>  
 		<div class="ui-field-contain">				  
-      <input type="button" value="Check-In" onclick="confirm('Le Check-In est tout simple réaliser et il te permet de gagner de l'argent et aussi augmenter la capacité de l'entreprise visitée!!')"/>
+      <input type="button" onclick="confirm('Le Check-In est tout simple réaliser!! Il te permet de gagner de l'argent et aussi augmenter la capacité de l'entreprise visitée!!');" value="Check-In"/>
       </div>
 </div>
 </div>
@@ -506,42 +506,9 @@ Bienvenue apprentis traders !
       <h1>Mission Capacité</h1>
     </div>
 
-  <div data-role="content">
-      <div id="fixerCapacite">
-      </div>
-      <div id="rangeCapacite" style="display:none">
-
-          <label for="newCapacite">Fixer la capacité</label>
-          <input type="number" name="newCapacite" id="newCapacite" value=""  />
-          <button id="btn_modif_capa">Enregistrer les capacités</button>
-        <table id="table_capacite" data-role="table" data-mode="columtoggle" class="ui-body-d ui-shadow table-stripe">
-          
-          <thead>
-              <tr class="ui-bar-a">
-                  <th>Entreprise</th>
-                  <th>Capacite</th>
-              </tr>
-          </thead>
-         
-          <tbody>
-                <tr>
-                </tr>
-          </tbody>
-        </table>
-       
-      </div>
-        
-        <div id="dissolutionSociete">
-          <a href="#confirmerDissoudre" data-rel="popup" class="ui-shadow ui-btn ui-corner-all">Dissoudre la société</a>
-        </div>
-
-        <div data-role="popup" id="confirmerDissoudre" data-theme="a" class="ui-content" style="max-width:340px; padding-bottom:2em;">
-            <h2>Etes-vous sur de dissoudre l'entreprise ?</h2>
-            <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="dissoudreSociete">Oui</a>
-            <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="pasDissoudreSociete">Non, je déconne</a>   
-        </div> 
-        
-  </div>
+ <div data-role="content">
+ 	<input type ="button" onclick="confirm('Attention jeune trader, tu dois être président afin de fixer la charge de ta société!!');" value="Capacite"/>
+ </div>
   
   <div data-role="footer" data-position="fixed">
       <h4 class="argent_dispo" style="color:#D6B430"></h4>
