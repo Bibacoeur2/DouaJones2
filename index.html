@@ -417,15 +417,16 @@ Bienvenue apprentis traders !
 	
        
         <!--Mission Check In-->
-          <div data-role="page" id="missionCheckin">
-            
+        <div data-role="page" id="missionCheckin">
 	<div data-role="header">
 		<a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
-    	<h1>Mission Check In</h1>
+    	<h1>Mission Checkin</h1>
 	</div>
 	<div data-role="content">
-
-	 <label for="select-custom-100">Vous devez d'abord choisir une Entreprise</label>
+    	
+            
+                  
+                    <label for="select-custom-100">Vous devez d'abord choisir une Entreprise</label>
                         <select name="select-custom-100" id="select-custom-100" data-native-menu="false">
                               <option value="Veuiller sélectionner une entreprise" selected="selected">Veuillez sélectionner une entreprise</option>
                               <option value="Hill Tone">Hill Tone</option>
@@ -455,12 +456,31 @@ Bienvenue apprentis traders !
                               <option value="Formula One">Formula One</option>
 
                           </select>  
-                          </div>
-		<div class="ui-field-contain">	
+                          <div class="ui-field-contain">	
     <label for="button">Validez votre Check-In en appuyant sur le bouton</label>
-    <input type="button" onclick="confirm('Le Check-In est tout simple à réaliser!! Il te permet de gagner de l'argent et aussi augmenter la capacité de l'entreprise visitée!!');" value="Checkin"/>
-      </div>
+    <input type="button" onclick="confirm('Le Checkin est tout simple à réaliser!! Il te permet de gagner 
+    de l'argent et aussi augmenter la capacité de l'entreprise visitée!!');" value="Valider"/>
+	</div>
+<div data-role="footer">
+    <h4 class="argent_dispo" style="color:#D6B430"></h4>
+</div>
+</div>
 
+  <!-- Mission Capacité-->
+  <div data-role="page" id="missionCapacite">
+    
+    <div data-role="header">
+      <a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
+      <h1>Mission Capacité</h1>
+    </div>
+
+ <div data-role="content">
+ 	<input type ="button" onclick="confirm('Attention jeune trader, tu dois être président afin de fixer la charge de ta société!!');" value="Capacite"/>
+ </div>
+  
+  <div data-role="footer" data-position="fixed">
+      <h4 class="argent_dispo" style="color:#D6B430"></h4>
+  </div>
 </div>
        
         <!--Mission emprunt  -->
