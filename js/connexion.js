@@ -22,7 +22,7 @@ $(document).on("pageinit", "#connexion", function() {
 			
 			socket.emit("connexionUtilisateur",data);
 			$.mobile.loading( 'show', {
-				text: "Veuillez patienter",
+				//text: "Veuillez patienter",
 				textVisible: true,
 				theme: "b",
 			});
@@ -80,7 +80,7 @@ $(document).on("pageshow", "#connexion", function() {
 	var password_joueur = localStorage.getItem(password_localStorage);
 	if (pseudo_joueur != null && password_joueur!= null )  {
 		$.mobile.loading( 'show', {
-			text: 'Veuillez patienter...',
+			//text: 'Veuillez patienter...',
 			textVisible: true,
 			theme: 'a'
 			});
