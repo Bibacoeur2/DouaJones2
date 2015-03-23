@@ -5,7 +5,7 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   	<title>Doua Jones</title>
   
-<!--Jquery mobile  -->
+<!--Jquery mobile -->
 	<link href="jquery.mobile-1.4.0/jquery.mobile.theme-1.4.0.min.css" rel="stylesheet" type="text/css">
   	<link href="jquery.mobile-1.4.0/jquery.mobile.structure-1.4.0.min.css" rel="stylesheet" type="text/css">
   	<script src="jquery.mobile-1.4.0/jquery-1.10.1.min.js" type="text/javascript"></script>
@@ -90,7 +90,7 @@
     " >
         
 <div>
-<marquee direction="left" scrollamount="5"> <font color="#FA5858" >
+<marquee direction="left" scrollamount="5" > <font color="#FA5858">
 Bienvenue apprentis traders !
 </font>
 </marquee>
@@ -99,38 +99,35 @@ Bienvenue apprentis traders !
 <!-- MESSAGES EVENEMENTS -->
 
 <!-- Evénements à la BMC -->
-<!--<marquee direction="left" scrollamount="5"> <font color="#FA5858" font-family:"Times New Roman",serif; font-weight:normal;>
+<!--<marquee direction="left" scrollamount="5"> <font color="#FA5858">
 Cette semaine à la Bibliotèque Marie Curie:  
-</font>
 	<img src="img/BMC.png" style= "height:50px; width:50px;"/> 
-	
+	</font>
 </marquee> -->
 
 <!--Forum Rhônes Alpes -->
-<!--<marquee direction="left" scrollamount="5"> <font color="#FA5858" font-family:"Times New Roman",serif; font-weight:normal;>
+<!--<marquee direction="left" scrollamount="5"> <font color="#FA5858">
 Le Forum Rhône-Alpes est le lieu privilégié d'échanges entre les élèves-ingénieurs et les entreprises. Venez nombreux au Double Mixte le 4 et 5 Mars.
-</font>
 	<img src="img/alpes.png" style= "height:50px; width:50px;"/> 
-	
+	</font>
 </marquee> -->
 
 <!--Gala-->
-<!--<marquee direction="left" scrollamount="5"> <font color="#FA5858" font-family:"Times New Roman",serif; font-weight:normal;>
-GALA: Rendez-vous le 28 Février à la Cité Internationale, Centre des congrès de Lyon!!</font>
+<!--<marquee direction="left" scrollamount="5"> <font color="#FA5858">
+GALA: Rendez-vous le 28 Février à la Cité Internationale, Centre des congrès de Lyon!!
 	<img src="img/GALA.png" style= "height:50px; width:50px;"/> 
-	
+	</font>
 </marquee> -->
 
 <!-- 24h de l'INSA -->
-<marquee direction="left" scrollamount="5"> <font color="#FA5858" font-family:"Times New Roman" font-weight:lighter font-size:15px>
+<marquee direction="left" scrollamount="5"> <font color="#FA5858">
 Les 24 heures de l'INSA vous donne rendez-vous les 22,23 et 24 Mai 2015 !! Des concerts, des animations, des courses ... vous attendent, en gros une SUPERBE ambiance!!
-	</font>
 	<img src="img/24.png" style= "height:50px; width:50px;"/> 
-	
+	</font>
 </marquee>
+<!-- Fin messages événements-->
 
- <!-- Fin des messages événements-->   
-
+    
 <img src="img/logo Doua Jones.png" style="height:100px; width:300px; display:block; margin-right:auto; margin-left:auto">
 
 <div data-role="content" style="padding-top:8px">
@@ -194,6 +191,464 @@ Bienvenue apprentis traders !
        	</div>
 </div>
 </div>
+
+<!--Missions-->
+  <div data-role="page" id="missions">
+     <div data-role="header">
+      <a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+        <h1>Missions</h1>
+      </div>
+      <div data-role="content">
+        <div class="ui-grid-a">
+                    <div class="ui-block-a" style="height:75px;"><a href="#missionAchat"><img src="img/achat.png" class="bouton_acc"></a></div>
+                    <div class="ui-block-b" style="height:75px;"><a href="#emprunt"><img src="img/emprunt.png" class="bouton_acc"></a></div>
+                    <div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Achat</div>
+                    <div class="ui-block-b" style="text-align:center;  margin-bottom:5px;">Emprunt</div>
+                    
+                    <div class="ui-block-a" style="height:75px;"><a href="#missionCapacite"><img src="img/capacite.png" class="bouton_acc"></a></div>
+                    <div class="ui-block-b" style="height:75px;"><a href="#missionCheckin"><img src="img/checkin.png" class="bouton_acc"></a></div>
+
+                    <div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Capacité</div>
+                    <div class="ui-block-b" style="text-align:center; margin-bottom:5px;">Checkin</div>
+                    
+                    <div class="ui-block-a" style="height:75px;"><a href="#vente"><img src="img/vente.png" class="bouton_acc"></a></div>
+                    <div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Vente</div>
+                 
+            
+                </div>
+        </div>
+        <!--Mission Vente-->
+        <div data-role="page" id="vente">
+        	<div data-role="header">
+        		<a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
+        		<h1>Mission Vente</h1>
+        	</div>
+        <div data-role="content">
+        	  <!-- Nom de l'entreprise -->     
+                      
+                <label for="select-custom-100">Entreprise</label>
+                        <select name="select-custom-100" id="Selectentreprise" data-native-menu="false">
+                              <option value="Veuiller sélectionner une entreprise" selected="selected">Veuillez sélectionner une entreprise</option>
+                              <option value="Hill Tone">Hill Tone</option>
+                              <option value="Genius Electrics">Genius Electrics</option>
+                              <option value="SoTech Materials">SoTech Materials</option>
+                              <option value="ITech">ITech</option>
+                              <option value="Miam Inc.">Miam Inc.</option>
+                              <option value="Campanule">Campanule</option>
+                              <option value="Wilbedon & Co">Wilbedon & Co</option>
+                              <option value="Blue Telecom">Blue Telecom</option>
+                              <option value="Green Energy & Co">Green Energy & Co</option>
+                              <option value="Biotech">Biotech</option>
+                              <option value="Total Logistics">Total Logistics</option>
+                              <option value="Brodewei">Brodewei</option>
+                              <option value="Center Park">Center Park</option>
+                              <option value="Mech. Entreprise">Mech. Entreprise</option>
+                              <option value="Club Mad">Club Mad</option>
+                              <option value="Sport Center">Sport Center</option>
+                              <option value="Leonard Construction">Leonard Construction</option>
+                              <option value="Doua Postal">Doua Postal</option>
+                              <option value="ORPIste">ORPIste</option>
+                              <option value="Palais des Congrès">Palais des Congrès</option>
+                              <option value="Airboost">Airboost</option>
+                              <option value="Lion Formation">Lion Formation</option>
+                              <option value="Pedro de Fermat">Pedro de Fermat</option>
+                              <option value="Badison Square Garden">Badison Square Garden</option>
+                              <option value="Formula One">Formula One</option>
+
+                          </select>                        
+     
+                <!-- Type d'ordre  -->
+  
+                          <label for="select-custom-51">Type d'ordre</label>
+                          <select name="select-custom-51" id="selectordre" data-native-menu="false">
+                              <option value="cours_limite" selected="selected">Ordre à cours limité</option>
+                              <option value="au_marche">Ordre au marché </option>
+                              <option value="seuil_declenchement">Ordre à déclenchement </option>
+                              <option value="meilleure_limite">Ordre à la meilleure limite</option>
+                          </select>
+                      
+                <!-- Listview qui contient PRIX, NOMBRE et DATE DE VALIDITE  -->
+                      
+                      <ul data-role="listview" data-inset="true">
+                      
+                <!--PRIX-->                   
+                          <li class="ui-field-contain">
+                            <div>
+                            <label for="Prix">Prix (en ฿)</label>
+                            <input type="number" name="number" id="Prix" value=""  /> 
+                             </div>
+                             <div id="consult_argentDisp">
+                             </div>
+                          </li>  
+                          
+    <!--TYPE DE DECLENCHEMENT-->                   
+                          <li class="ui-field-contain" style="display:none;" id="declenchement">
+                            <fieldset data-role="controlgroup" data-type="horizontal" style="border:none;" id="typedeclenchement">
+                                <legend>Type de déclenchement</legend>
+                                <input type="radio" name="radio-choice-type-declenchement" id="radio-choice-h-2a" value="Seuil" checked="checked">
+                                <label for="radio-choice-h-2a">Seuil</label>
+                                <input type="radio" name="radio-choice-type-declenchement" id="radio-choice-h-2b" value="Plage">
+                                <label for="radio-choice-h-2b">Plage</label>
+                            </fieldset>  
+                                                    
+      <!--SAISIE DU SEUIL OU DE LA PLAGE-->    
+
+        <!--SAISIE DU SEUIL-->    
+      
+                            <label for="vseuil" style="margin-top:10px;"id="vseuillabel">Saisir le seuil
+                            </label>
+                            <textarea cols="40" rows="8" name="textarea" id="vseuil" style="width:80px; height:40px; resize:none;  margin-top:10px;">
+                            </textarea>  
+
+     <!--SAISIE DE LA PLAGE--> 	 
+                             
+                          <div data-role="rangeslider" style="margin-top:10px; display:none;" id="vplage">
+                              <label for="range-10a" id="vplagelabel" style="display:none; margin-top:10px;">Saisir la plage
+                                </label>
+                                <input type="range" name="range-10a" id="range-10a" min="0" max="100" step=".01" value="0">
+                                <label for="range-10b">Saisir la plage
+                                </label>
+                                <input type="range" name="range-10b" id="range-10b" min="0" max="100" step=".01" value="100">
+                              </div>
+                          
+                          </li>
+      <!--NOMBRE-->
+                      
+                          <li class="ui-field-contain">
+                              <label for="Nombre">Nombre</label>
+                              <input type="range" name="slider" id="Nombre" value="1" min="1" max="100"  />
+                          </li>
+                          
+      <!--Date de validite-->
+                          
+                          <li class="ui-field-contain">                 
+                              <fieldset data-role="controlgroup" data-type="horizontal" data-mini="false" id="validite" style="border:none">
+                                  <legend>Date de validité</legend>
+                                  <input type="radio" name="radio-choice-type-date" id="radio-choice-1" value="Aujourdhui" checked="true" >
+                                  <label for="radio-choice-1">Aujourd'hui</label>
+                                  <input type="radio" name="radio-choice-type-date" id="radio-choice-2" value="Date">
+                                  <label for="radio-choice-2">Date</label>
+                                  <input type="radio" name="radio-choice-type-date" id="radio-choice-3" value="Révocation">
+                                  <label for="radio-choice-3">Révocation</label>
+                              </fieldset>
+                              
+      <!-- Date Picker -->
+                              
+                              <div style="margin-top:10px">
+                                  <label for="saisiedate" id="legendedate"></label>
+                                  <input type="text" id="saisiedate" data-inline="false"  data-role="date">
+                              </div>
+                          </li>
+                      </ul>
+                      
+      <!-- Bouton d'envoi -->
+                      
+                       <div class="ui-field-contain">
+                          <input type="button" onclick="confirm('Bravo jeune trader!! Maintenant tu connais les étapes à suivre pour mettre en vente tes actions!!');" value="Valider" />
+                          </div>
+
+      </div>
+      
+    </div>
+
+	
+       
+        <!--Mission Check In-->
+        <div data-role="page" id="missionCheckin">
+	<div data-role="header">
+		<a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
+    	<h1>Mission Checkin</h1>
+	</div>
+	<div data-role="content">
+    	
+            
+                  <label for="select-custom-100">Vous devez d'abord choisir une Entreprise</label>
+                        <select name="select-custom-100" id="select-custom-100" data-native-menu="false">
+                              <option value="Veuiller sélectionner une entreprise" selected="selected">Veuillez sélectionner une entreprise</option>
+                              <option value="Hill Tone">Hill Tone</option>
+                              <option value="Genius Electrics">Genius Electrics</option>
+                              <option value="SoTech Materials">SoTech Materials</option>
+                              <option value="ITech">ITech</option>
+                              <option value="Miam Inc.">Miam Inc.</option>
+                              <option value="Campanule">Campanule</option>
+                              <option value="Wilbedon & Co">Wilbedon & Co</option>
+                              <option value="Blue Telecom">Blue Telecom</option>
+                              <option value="Green Energy & Co">Green Energy & Co</option>
+                              <option value="Biotech">Biotech</option>
+                              <option value="Total Logistics">Total Logistics</option>
+                              <option value="Brodewei">Brodewei</option>
+                              <option value="Center Park">Center Park</option>
+                              <option value="Mech. Entreprise">Mech. Entreprise</option>
+                              <option value="Club Mad">Club Mad</option>
+                              <option value="Sport Center">Sport Center</option>
+                              <option value="Leonard Construction">Leonard Construction</option>
+                              <option value="Doua Postal">Doua Postal</option>
+                              <option value="ORPIste">ORPIste</option>
+                              <option value="Palais des Congrès">Palais des Congrès</option>
+                              <option value="Airboost">Airboost</option>
+                              <option value="Lion Formation">Lion Formation</option>
+                              <option value="Pedro de Fermat">Pedro de Fermat</option>
+                              <option value="Badison Square Garden">Badison Square Garden</option>
+                              <option value="Formula One">Formula One</option>
+
+                          </select>  
+                     
+    <input type ="button" onclick="confirm('Le Checkin est tout simple à réaliser!!!');" value="Checkin"/>
+</div>
+<div data-role="footer">
+    <h4 class="argent_dispo" style="color:#D6B430"></h4>
+</div>
+</div>
+
+  <!-- Mission Capacité-->
+  <div data-role="page" id="missionCapacite">
+    
+    <div data-role="header">
+      <a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
+      <h1>Mission Capacité</h1>
+    </div>
+
+ <div data-role="content">
+ 	<input type ="button" onclick="confirm('Attention jeune trader, tu dois être président afin de fixer la charge de ta société!!');" value="Capacite"/>
+ </div>
+  
+  <div data-role="footer" data-position="fixed">
+      <h4 class="argent_dispo" style="color:#D6B430"></h4>
+  </div>
+</div>
+       
+        <!--Mission emprunt  -->
+  <div data-role="page" id="emprunt">
+	<div data-role="header">
+		<a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
+    	<h1>BMC Investment</h1>
+	</div>
+	<div data-role="content">
+    	<form>
+            <ul data-role="listview" data-inset="true">
+                <li class="ui-field-contain">
+                  <div style="width:50%; display:inline-block">
+                  TEG (en ฿)
+                  </div>
+                  <div style="width:50%; display:inline-block">
+                    <textarea cols="40" rows="8" name="textarea" id="TEG" style="resize:none; height:50px;" disabled>
+                    </textarea>
+                  </div>
+                   </li>
+                <li class="ui-field-contain">
+                    <label for="somme_emprunt">Somme souhaitée (en ฿)
+                    </label>
+                    <input type="range" name="slider-emprunt" id="somme_emprunt" value="1" min="1" max="100">
+                </li>
+                <li class="ui-field-contain">
+                    <label for="duree_emprunt">Durée de remboursement (en jours)
+                    </label>
+                    <input type="range" name="duree_emprunt" id="duree_emprunt" value="1" min="1" max="30">            
+                </li>
+            </ul> 
+                <input type="button" value="Emprunter" id="saisie_emprunt" onclick="confirm('N'oublies pas que pour réaliser un emprunt il faut être à la BMC!!!')"/>
+		</form>
+	</div>
+<div data-role="footer">
+    <h4 class="argent_dispo" style="color:#D6B430"></h4>
+</div>
+</div>
+
+  <!-- Mission Capacité-->
+  <div data-role="page" id="missionCapacite">
+    
+    <div data-role="header">
+      <a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
+      <h1>Mission Capacité</h1>
+    </div>
+
+ <div data-role="content">
+ 	<input type ="button" onclick="confirm('Attention jeune trader, tu dois être président afin de fixer la charge de ta société!!');" value="Capacite"/>
+ </div>
+  
+  <div data-role="footer" data-position="fixed">
+      <h4 class="argent_dispo" style="color:#D6B430"></h4>
+  </div>
+</div>
+
+
+  <!-- Mission Achat -->
+ <div data-role="page" id="missionAchat">
+      <div data-role="header">
+      <a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+        <h1>Mission Achat</h1>
+      </div>
+ 
+    <div data-role="content">
+
+                  <!-- Nom de l'entreprise -->     
+                      
+                <label for="select-custom-100">Entreprise</label>
+                        <select name="select-custom-100" id="Selectentreprise" data-native-menu="false">
+                              <option value="Veuiller sélectionner une entreprise" selected="selected">Veuillez sélectionner une entreprise</option>
+                              <option value="Hill Tone">Hill Tone</option>
+                              <option value="Genius Electrics">Genius Electrics</option>
+                              <option value="SoTech Materials">SoTech Materials</option>
+                              <option value="ITech">ITech</option>
+                              <option value="Miam Inc.">Miam Inc.</option>
+                              <option value="Campanule">Campanule</option>
+                              <option value="Wilbedon & Co">Wilbedon & Co</option>
+                              <option value="Blue Telecom">Blue Telecom</option>
+                              <option value="Green Energy & Co">Green Energy & Co</option>
+                              <option value="Biotech">Biotech</option>
+                              <option value="Total Logistics">Total Logistics</option>
+                              <option value="Brodewei">Brodewei</option>
+                              <option value="Center Park">Center Park</option>
+                              <option value="Mech. Entreprise">Mech. Entreprise</option>
+                              <option value="Club Mad">Club Mad</option>
+                              <option value="Sport Center">Sport Center</option>
+                              <option value="Leonard Construction">Leonard Construction</option>
+                              <option value="Doua Postal">Doua Postal</option>
+                              <option value="ORPIste">ORPIste</option>
+                              <option value="Palais des Congrès">Palais des Congrès</option>
+                              <option value="Airboost">Airboost</option>
+                              <option value="Lion Formation">Lion Formation</option>
+                              <option value="Pedro de Fermat">Pedro de Fermat</option>
+                              <option value="Badison Square Garden">Badison Square Garden</option>
+                              <option value="Formula One">Formula One</option>
+
+                        </select>                        
+        
+
+          
+                <!-- Type d'ordre  -->
+                          
+                          <label for="select-custom-51">Type d'ordre</label>
+                          <select name="select-custom-51" id="selectordre" data-native-menu="false">
+                              <option value="Veuiller sélectionner un type d'ordre" selected="selected">Veuillez choisir un type d'ordre</option>
+                              <!--<option value="cours_limite" selected="selected">Ordre à cours limité</option>-->
+                              <option title="Ordre exécuté que si le cours du titre atteint ou dépasse le cours fixé." value="cours_limite" > Ordre à cours limité</option>
+                              <!--option value="au_marche">Ordre au marché </option>-->
+                              <option title="Ordre exécuté sans limite de prix, dans la limite des quantités disponibles." value="au_marche" >Ordre au marché</option>
+                              <!--option value="seuil_declenchement">Ordre à déclenchement </option>-->
+                              <option title="Ordre exécuté à partir d'un cours déterminé." value="seuil_declenchement" >Ordre a` déclenchement </option>
+                              <!--option value="meilleure_limite">Ordre à la meilleure limite</option>-->
+                              <option title="Ordre exécuté  au prix du premier vendeur, dans la limite des quantités disponibles." value="meilleure_limite" > Ordre à la meilleure limite</option>
+
+                          </select>
+                      
+                      
+                     <ul data-role="listview" data-inset="true">
+                      
+                <!--PRIX-->        
+                         <span TITLE="Prix">Veuillez saisir le prix que vous êtes prêt à investir dans cette transaction</span>           
+                         <li class="ui-field-contain">
+                            <div>
+                            <label for="Prix">Prix (en ฿)</label>
+                            <input type="number" name="number" id="Prix" value=""  /> 
+                             </div>
+                             <div id="consult_argentDisp">
+                             </div>
+                          </li>  
+                          
+                <!--TYPE DE DECLENCHEMENT-->  
+                        <!--  <span TITLE="Type de déclenchement">Veuillez choisir le type de déclenchement souhaité</span> -->                
+                          <li class="ui-field-contain" style="display:none;" id="declenchement">
+                            <fieldset data-role="controlgroup" data-type="horizontal" style="border:none;" id="typedeclenchement">
+                                <legend>Type de déclenchement</legend>
+                                <input type="radio" name="radio-choice-type-declenchement" id="radio-choice-h-2a" value="Seuil" checked="checked">
+                                <label for="radio-choice-h-2a">Seuil</label>
+                                <input type="radio" name="radio-choice-type-declenchement" id="radio-choice-h-2b" value="Plage">
+                                <label for="radio-choice-h-2b">Plage</label>
+                            </fieldset>  
+                                                    
+                <!--SAISIE DU SEUIL OU DE LA PLAGE-->    
+
+                   <!--SAISIE DU SEUIL-->    
+      
+                            <label for="vseuil" style="margin-top:10px;"id="vseuillabel">Saisir le seuil
+                            </label>
+                            <textarea cols="40" rows="8" name="textarea" id="vseuil" style="width:80px; height:40px; resize:none;  margin-top:10px;">
+                            </textarea>  
+
+                    <!--SAISIE DE LA PLAGE-->    
+                            
+                            <div data-role="rangeslider" style="margin-top:10px; display:none;" id="vplage">
+                              <label for="range-10a" id="vplagelabel" style="display:none; margin-top:10px;">Saisir la plage
+                                </label>
+                                <input type="range" name="range-10a" id="range-10a" min="0" max="100" step=".01" value="0">
+                                <label for="range-10b">Saisir la plage
+                                </label>
+                                <input type="range" name="range-10b" id="range-10b" min="0" max="100" step=".01" value="100">
+                              </div>
+                          
+                          </li>
+                    <!--NOMBRE-->
+                         <span TITLE="NbAction">Veuillez saisir le nombre d'action souhaité</span>
+                         <li class="ui-field-contain">
+                              <label for="Nombre">Nombre</label>
+                              <input type="range" name="slider" id="Nombre" value="1" min="1" max="100"  />
+                          </li>
+                          
+                <!--Date de validite-->
+                          <span TITLE="DateValidité">Veuillez choisir la date limite à laquelle votre ordre sera toujours valide</span>
+                          <li class="ui-field-contain">                 
+                              <fieldset data-role="controlgroup" data-type="horizontal" data-mini="false" id="validite" style="border:none">
+                                  <legend>Date de validité</legend>
+                                  <input type="radio" name="radio-choice-type-date" id="radio-choice-1" value="Aujourdhui" checked="true" >
+                                  <label for="radio-choice-1">Aujourd'hui</label>
+                                  <input type="radio" name="radio-choice-type-date" id="radio-choice-2" value="Date">
+                                  <label for="radio-choice-2">Date</label>
+                                  <input type="radio" name="radio-choice-type-date" id="radio-choice-3" value="Révocation">
+                                  <label for="radio-choice-3">Révocation</label>
+                              </fieldset>
+                              
+                <!-- Date Picker -->
+                              
+                              <div style="margin-top:10px">
+                                  <label for="saisiedate" id="legendedate"></label>
+                                  <input type="text" id="saisiedate" data-inline="false"  data-role="date">
+                              </div>
+                          </li>
+                      </ul>
+                      
+                <!-- Bouton d'envoi -->
+                      
+                       <div class="ui-field-contain">
+                          <input type="button" value="Valider" onclick="confirm('Bravo jeune Trader!! Maintenant tu connais toutes les étapes pour acheter des actions!!')" />
+
+      </div>
+     
+    </div>
+    </div>
+   <div data-role="footer">
+   	<!-- MESSAGES EVENEMENTS -->
+
+<!-- Evénements à la BMC -->
+<!--<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
+Cette semaine à la Bibliotèque Marie Curie:  
+	<img src="img/BMC.png" style= "height:50px; width:50px;"/> 
+	</font>
+</marquee> -->
+
+<!--Forum Rhônes Alpes -->
+<!--<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
+Le Forum Rhône-Alpes est le lieu privilégié d'échanges entre les élèves-ingénieurs et les entreprises. Venez nombreux au Double Mixte le 4 et 5 Mars.
+	<img src="img/alpes.png" style= "height:50px; width:50px;"/> 
+	</font>
+</marquee> -->
+
+<!--Gala-->
+<!--<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
+GALA: Rendez-vous le 28 Février à la Cité Internationale, Centre des congrès de Lyon!!
+	<img src="img/GALA.png" style= "height:50px; width:50px;"/> 
+	</font>
+</marquee> -->
+
+<!-- 24h de l'INSA -->
+<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
+Les 24 heures de l'INSA vous donne rendez-vous les 22,23 et 24 Mai 2015 !! Des concerts, des animations, des courses ... vous attendent, en gros une SUPERBE ambiance!!
+	<img src="img/24.png" style= "height:50px; width:50px;"/> 
+	</font>
+</marquee>
+   </div>
+</div> 
+   
 
 
     
@@ -262,8 +717,7 @@ Bienvenue apprentis traders !
             <a href="#" id="geolocation_icon" data-role="button" class="ui-icon-location ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext" style="margin-right:50px">No text</a>
             <h1>Carte du campus</h1>
         </div>
-        <div data-role="content" id="map-canvas">
-        </div>
+        <div data-role="content" id="map-canvas"></div>
         <div id="infowindow_content" style="display:none"></div>
         <div data-role="footer" data-position="fixed">
 			<h4 class="argent_dispo" style="color:#D6B430"></h4>
@@ -1241,6 +1695,7 @@ margin: 0 auto; margin-top:4px ">
                     <option value="9">Achat d’une action supplémentaire à limite autorisée</option>
 </select>
 <input type="submit" value="Acheter" id="acheter_atout">
+
 -->
 		</div>
     	<div data-role="footer">
