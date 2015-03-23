@@ -59,6 +59,7 @@
     <script src="js/candidatures.js"></script>
     <script src="js/administrer.js"></script>
     <script src="js/infos_societe.js"></script>
+     <script src="js/missions.js"></script>
     
     
  <!-- Socket io-->
@@ -199,6 +200,112 @@ Bienvenue apprentis traders !
                 </div><!-- /grid-a -->
         </div>
     </div>
+</div>
+
+<!--Mission-->
+<div data-role="page" id="missions"> 
+	 <div data-role="header">
+      <a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+        <h1>Missions</h1>
+      </div>
+      <div data-role="content">
+        <div class="ui-grid-a">
+                    <div class="ui-block-a" style="height:75px;"><a href="#missionAchat"><img src="img/achat.png" class="bouton_acc"></a></div>
+                    <div class="ui-block-b" style="height:75px;"><a href="#emprunt"><img src="img/emprunt.png" class="bouton_acc"></a></div>
+                    <div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Achat</div>
+                    <div class="ui-block-b" style="text-align:center;  margin-bottom:5px;">Emprunt</div>
+                    
+                    <div class="ui-block-a" style="height:75px;"><a href="#missionCapacite"><img src="img/capacite.png" class="bouton_acc"></a></div>
+                    <div class="ui-block-b" style="height:75px;"><a href="#missionCheckin"><img src="img/checkin.png" class="bouton_acc"></a></div>
+
+                    <div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Capacité</div>
+                    <div class="ui-block-b" style="text-align:center; margin-bottom:5px;">Checkin</div>
+                    
+                    <div class="ui-block-a" style="height:75px;"><a href="#vente"><img src="img/vente.png" class="bouton_acc"></a></div>
+                    <div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Vente</div>
+        </div>
+       <!--Mission Check In-->
+        <div data-role="page" id="missionCheckin">
+	<div data-role="header">
+		<a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
+    	<h1>Mission Checkin</h1>
+	</div>
+	<div data-role="content">
+    	
+            
+                  <label for="select-custom-100">Vous devez d'abord choisir une Entreprise</label>
+                        <select name="select-custom-100" id="select-custom-100" data-native-menu="false">
+                              <option value="Veuiller sélectionner une entreprise" selected="selected">Veuillez sélectionner une entreprise</option>
+                              <option value="Hill Tone">Hill Tone</option>
+                              <option value="Genius Electrics">Genius Electrics</option>
+                              <option value="SoTech Materials">SoTech Materials</option>
+                              <option value="ITech">ITech</option>
+                              <option value="Miam Inc.">Miam Inc.</option>
+                              <option value="Campanule">Campanule</option>
+                              <option value="Wilbedon & Co">Wilbedon & Co</option>
+                              <option value="Blue Telecom">Blue Telecom</option>
+                              <option value="Green Energy & Co">Green Energy & Co</option>
+                              <option value="Biotech">Biotech</option>
+                              <option value="Total Logistics">Total Logistics</option>
+                              <option value="Brodewei">Brodewei</option>
+                              <option value="Center Park">Center Park</option>
+                              <option value="Mech. Entreprise">Mech. Entreprise</option>
+                              <option value="Club Mad">Club Mad</option>
+                              <option value="Sport Center">Sport Center</option>
+                              <option value="Leonard Construction">Leonard Construction</option>
+                              <option value="Doua Postal">Doua Postal</option>
+                              <option value="ORPIste">ORPIste</option>
+                              <option value="Palais des Congrès">Palais des Congrès</option>
+                              <option value="Airboost">Airboost</option>
+                              <option value="Lion Formation">Lion Formation</option>
+                              <option value="Pedro de Fermat">Pedro de Fermat</option>
+                              <option value="Badison Square Garden">Badison Square Garden</option>
+                              <option value="Formula One">Formula One</option>
+
+                          </select>  
+                     
+    <input type ="button" onclick="confirm('Le Checkin est tout simple à réaliser!!!');" value="Checkin"/>
+</div>
+<div data-role="footer">
+    <h4 class="argent_dispo" style="color:#D6B430"></h4>
+</div>
+</div>
+  
+      	
+</div>
+      
+      
+      <div data-role="footer">
+      	<!-- MESSAGES EVENEMENTS -->
+
+<!-- Evénements à la BMC -->
+<!--<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
+Cette semaine à la Bibliotèque Marie Curie:  
+	<img src="img/BMC.png" style= "height:50px; width:50px;"/> 
+	</font>
+</marquee> -->
+
+<!--Forum Rhônes Alpes -->
+<!--<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
+Le Forum Rhône-Alpes est le lieu privilégié d'échanges entre les élèves-ingénieurs et les entreprises. Venez nombreux au Double Mixte le 4 et 5 Mars.
+	<img src="img/alpes.png" style= "height:50px; width:50px;"/> 
+	</font>
+</marquee> -->
+
+<!--Gala-->
+<!--<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
+GALA: Rendez-vous le 28 Février à la Cité Internationale, Centre des congrès de Lyon!!
+	<img src="img/GALA.png" style= "height:50px; width:50px;"/> 
+	</font>
+</marquee> -->
+
+<!-- 24h de l'INSA -->
+<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
+Les 24 heures de l'INSA vous donne rendez-vous les 22,23 et 24 Mai 2015 !! Des concerts, des animations, des courses ... vous attendent, en gros une SUPERBE ambiance!!
+	<img src="img/24.png" style= "height:50px; width:50px;"/> 
+	</font>
+</marquee>
+      </div>
 </div>
     
 <!-- Tutoriel -->
