@@ -16,12 +16,11 @@
     <script src="flot/jquery.flot.min.js"></script>
     <script src="flot/jquery.flot.navigate.min.js"></script>
     <script src="flot/jquery.flot.time.min.js"></script>
-   
     
     <link href="jquery-ui-1.10.4.custom/jquery.mobile.datepicker.css">
     
 
- <!--Thème Stanford -->
+ <!--Thème Stanford -->
  
  	<link href="ressources/ThemeStanford.min.css" rel="stylesheet" type="text/css">
     
@@ -60,9 +59,6 @@
     <script src="js/candidatures.js"></script>
     <script src="js/administrer.js"></script>
     <script src="js/infos_societe.js"></script>
-    <script src="js/missions.js"></script>
-   
-    
     
     
  <!-- Socket io-->
@@ -94,45 +90,10 @@
     " >
         
 <div>
-<marquee direction="left" scrollamount="5" > <font color="#F6CECE"> 
+<marquee direction="left" scrollamount="5" >
 Bienvenue apprentis traders !
-</font>
 </marquee>
 </div>
-
-<!-- MESSAGES EVENEMENTS -->
-
-<!-- Evénements à la BMC -->
-<!--<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
-Cette semaine à la Bibliotèque Marie Curie:  
-	<img src="img/BMC.png" style= "height:50px; width:50px;"/> 
-	</font>
-</marquee> -->
-
-<!--Forum Rhônes Alpes -->
-<!--<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
-Le Forum Rhône-Alpes est le lieu privilégié d'échanges entre les élèves-ingénieurs et les entreprises. Venez nombreux au Double Mixte le 4 et 5 Mars.
-	<img src="img/alpes.png" style= "height:50px; width:50px;"/> 
-	</font>
-</marquee> -->
-
-<!--Gala-->
-<!--<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
-GALA: Rendez-vous le 28 Février à la Cité Internationale, Centre des congrès de Lyon!!
-	<img src="img/GALA.png" style= "height:50px; width:50px;"/> 
-	</font>
-</marquee> -->
-
-<!-- 24h de l'INSA -->
-<marquee direction="left" scrollamount="5"> <font color="#F6CECE">
-Les 24 heures de l'INSA vous donne rendez-vous les 22,23 et 24 Mai 2015 !! Des concerts, des animations, des courses ... vous attendent, en gros une SUPERBE ambiance!!
-	<img src="img/24.png" style= "height:50px; width:50px;"/> 
-	</font>
-</marquee>
-
-
-
-
     
 <img src="img/logo Doua Jones.png" style="height:100px; width:300px; display:block; margin-right:auto; margin-left:auto">
 
@@ -190,7 +151,7 @@ Bienvenue apprentis traders !
                     
 <div style="margin-top:20px">
 <input type="submit" value="Envoyer l'inscription" id="envoi_ins"/>
-        <button id="retour_conn">Déjà un compte ?</button>
+        <button id="retour_conn">Déjà un compte ?</button>
 </div>
 </form>
 </div>
@@ -226,13 +187,13 @@ Bienvenue apprentis traders !
                     <div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Tutoriel</div>
                     <div class="ui-block-b" style="text-align:center;  margin-bottom:5px;">Carte</div>
                 
-                    <div class="ui-block-a" style="height:75px;"><a href="#missions"><img src="img/missions icone rouge.png"class="bouton_acc"></a></div>
+                    <div class="ui-block-a" style="height:75px;"><a href="#" onClick="alert('Contenu à venir');"><img src="img/missions icone rouge.png"class="bouton_acc"></a></div>
                     <div class="ui-block-b" style="height:75px;"><a href="#profil_joueur"><img src="img/mon compte icone rouge.png" class="bouton_acc"></a></div>
                     <div class="ui-block-a" style="text-align:center ; margin-bottom:5px;">Missions</div>
                     <div class="ui-block-b" style="text-align:center; margin-bottom:5px;">Mon Profil</div>
                     <div class="ui-block-a" style="height:75px;"><a href="#chat"><img src="img/social icone rouge.png" class="bouton_acc"></a></div>
                     <div class="ui-block-b" style="height:75px;"><a href="#classement"><img src="img/Classement rouge.png" class="bouton_acc"></a></div>
-                    <div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Chat</div>
+                    <div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Social</div>
                     <div class="ui-block-b" style="text-align:center; margin-bottom:5px;">Classement</div>
             
                 </div><!-- /grid-a -->
@@ -255,432 +216,6 @@ Bienvenue apprentis traders !
         <a href="#" id='tutorielNext' class="ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-notext ui-btn-inline"></a>
       </div>
     </div>
-    
-   <!--Missions-->
-  <div data-role="page" id="missions">
-     <div data-role="header">
-      <a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
-        <h1>Missions</h1>
-      </div>
-        <div class="ui-grid-a">
-                    <div class="ui-block-a" style="height:75px;"><a href="#missionAchat"><img src="img/achat.png" class="bouton_acc"></a></div>
-                    <div class="ui-block-b" style="height:75px;"><a href="#emprunt"><img src="img/emprunt.png" class="bouton_acc"></a></div>
-                    <div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Achat</div>
-                    <div class="ui-block-b" style="text-align:center;  margin-bottom:5px;">Emprunt</div>
-                    
-                    <div class="ui-block-a" style="height:75px;"><a href="#missionCapacite"><img src="img/capacite.png" class="bouton_acc"></a></div>
-                    <div class="ui-block-b" style="height:75px;"><a href="#missionCheckin"><img src="img/checkin.png" class="bouton_acc"></a></div>
-
-                    <div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Capacité</div>
-                    <div class="ui-block-b" style="text-align:center; margin-bottom:5px;">Checkin</div>
-                    
-                    <div class="ui-block-a" style="height:75px;"><a href="#vente"><img src="img/vente.png" class="bouton_acc"></a></div>
-                    <div class="ui-block-a" style="text-align:center; margin-bottom:5px;">Vente</div>
-                 
-            
-                </div>
-        </div>
-        <!--Mission Vente-->
-        <div data-role="page" id="vente">
-        	<div data-role="header">
-        		<a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
-        		<h1>Mission Vente</h1>
-        	</div>
-        <div data-role="content">
-        	  <!-- Nom de l'entreprise -->     
-                      
-                <label for="select-custom-100">Entreprise</label>
-                        <select name="select-custom-100" id="Selectentreprise" data-native-menu="false">
-                              <option value="Veuiller sélectionner une entreprise" selected="selected">Veuillez sélectionner une entreprise</option>
-                              <option value="Hill Tone">Hill Tone</option>
-                              <option value="Genius Electrics">Genius Electrics</option>
-                              <option value="SoTech Materials">SoTech Materials</option>
-                              <option value="ITech">ITech</option>
-                              <option value="Miam Inc.">Miam Inc.</option>
-                              <option value="Campanule">Campanule</option>
-                              <option value="Wilbedon & Co">Wilbedon & Co</option>
-                              <option value="Blue Telecom">Blue Telecom</option>
-                              <option value="Green Energy & Co">Green Energy & Co</option>
-                              <option value="Biotech">Biotech</option>
-                              <option value="Total Logistics">Total Logistics</option>
-                              <option value="Brodewei">Brodewei</option>
-                              <option value="Center Park">Center Park</option>
-                              <option value="Mech. Entreprise">Mech. Entreprise</option>
-                              <option value="Club Mad">Club Mad</option>
-                              <option value="Sport Center">Sport Center</option>
-                              <option value="Leonard Construction">Leonard Construction</option>
-                              <option value="Doua Postal">Doua Postal</option>
-                              <option value="ORPIste">ORPIste</option>
-                              <option value="Palais des Congrès">Palais des Congrès</option>
-                              <option value="Airboost">Airboost</option>
-                              <option value="Lion Formation">Lion Formation</option>
-                              <option value="Pedro de Fermat">Pedro de Fermat</option>
-                              <option value="Badison Square Garden">Badison Square Garden</option>
-                              <option value="Formula One">Formula One</option>
-
-                          </select>                        
-     
-                <!-- Type d'ordre  -->
-  
-                          <label for="select-custom-51">Type d'ordre</label>
-                          <select name="select-custom-51" id="selectordre" data-native-menu="false">
-                              <option value="cours_limite" selected="selected">Ordre à cours limité</option>
-                              <option value="au_marche">Ordre au marché </option>
-                              <option value="seuil_declenchement">Ordre à déclenchement </option>
-                              <option value="meilleure_limite">Ordre à la meilleure limite</option>
-                          </select>
-                      
-                <!-- Listview qui contient PRIX, NOMBRE et DATE DE VALIDITE  -->
-                      
-                      <ul data-role="listview" data-inset="true">
-                      
-                <!--PRIX-->                   
-                          <li class="ui-field-contain">
-                            <div>
-                            <label for="Prix">Prix (en ฿)</label>
-                            <input type="number" name="number" id="Prix" value=""  /> 
-                             </div>
-                             <div id="consult_argentDisp">
-                             </div>
-                          </li>  
-                          
-    <!--TYPE DE DECLENCHEMENT-->                   
-                          <li class="ui-field-contain" style="display:none;" id="declenchement">
-                            <fieldset data-role="controlgroup" data-type="horizontal" style="border:none;" id="typedeclenchement">
-                                <legend>Type de déclenchement</legend>
-                                <input type="radio" name="radio-choice-type-declenchement" id="radio-choice-h-2a" value="Seuil" checked="checked">
-                                <label for="radio-choice-h-2a">Seuil</label>
-                                <input type="radio" name="radio-choice-type-declenchement" id="radio-choice-h-2b" value="Plage">
-                                <label for="radio-choice-h-2b">Plage</label>
-                            </fieldset>  
-                                                    
-      <!--SAISIE DU SEUIL OU DE LA PLAGE-->    
-
-        <!--SAISIE DU SEUIL-->    
-      
-                            <label for="vseuil" style="margin-top:10px;"id="vseuillabel">Saisir le seuil
-                            </label>
-                            <textarea cols="40" rows="8" name="textarea" id="vseuil" style="width:80px; height:40px; resize:none;  margin-top:10px;">
-                            </textarea>  
-
-     <!--SAISIE DE LA PLAGE--> 	 
-                             
-                          <div data-role="rangeslider" style="margin-top:10px; display:none;" id="vplage">
-                              <label for="range-10a" id="vplagelabel" style="display:none; margin-top:10px;">Saisir la plage
-                                </label>
-                                <input type="range" name="range-10a" id="range-10a" min="0" max="100" step=".01" value="0">
-                                <label for="range-10b">Saisir la plage
-                                </label>
-                                <input type="range" name="range-10b" id="range-10b" min="0" max="100" step=".01" value="100">
-                              </div>
-                          
-                          </li>
-      <!--NOMBRE-->
-                      
-                          <li class="ui-field-contain">
-                              <label for="Nombre">Nombre</label>
-                              <input type="range" name="slider" id="Nombre" value="1" min="1" max="100"  />
-                          </li>
-                          
-      <!--Date de validite-->
-                          
-                          <li class="ui-field-contain">                 
-                              <fieldset data-role="controlgroup" data-type="horizontal" data-mini="false" id="validite" style="border:none">
-                                  <legend>Date de validité</legend>
-                                  <input type="radio" name="radio-choice-type-date" id="radio-choice-1" value="Aujourdhui" checked="true" >
-                                  <label for="radio-choice-1">Aujourd'hui</label>
-                                  <input type="radio" name="radio-choice-type-date" id="radio-choice-2" value="Date">
-                                  <label for="radio-choice-2">Date</label>
-                                  <input type="radio" name="radio-choice-type-date" id="radio-choice-3" value="Révocation">
-                                  <label for="radio-choice-3">Révocation</label>
-                              </fieldset>
-                              
-      <!-- Date Picker -->
-                              
-                              <div style="margin-top:10px">
-                                  <label for="saisiedate" id="legendedate"></label>
-                                  <input type="text" id="saisiedate" data-inline="false"  data-role="date">
-                              </div>
-                          </li>
-                      </ul>
-                      
-      <!-- Bouton d'envoi -->
-                      
-                       <div class="ui-field-contain">
-                          <input type="button" onclick="confirm('Bravo jeune trader!! Maintenant tu connais les étapes à suivre pour mettre en vente tes actions!!');" value="Valider" />
-                          </div>
-
-      </div>
-      
-    </div>
-
-	
-       
-        <!--Mission Check In-->
-        <div data-role="page" id="missionCheckin">
-	<div data-role="header">
-		<a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
-    	<h1>Mission Checkin</h1>
-	</div>
-	<div data-role="content">
-    	
-            
-                  <label for="select-custom-100">Vous devez d'abord choisir une Entreprise</label>
-                        <select name="select-custom-100" id="select-custom-100" data-native-menu="false">
-                              <option value="Veuiller sélectionner une entreprise" selected="selected">Veuillez sélectionner une entreprise</option>
-                              <option value="Hill Tone">Hill Tone</option>
-                              <option value="Genius Electrics">Genius Electrics</option>
-                              <option value="SoTech Materials">SoTech Materials</option>
-                              <option value="ITech">ITech</option>
-                              <option value="Miam Inc.">Miam Inc.</option>
-                              <option value="Campanule">Campanule</option>
-                              <option value="Wilbedon & Co">Wilbedon & Co</option>
-                              <option value="Blue Telecom">Blue Telecom</option>
-                              <option value="Green Energy & Co">Green Energy & Co</option>
-                              <option value="Biotech">Biotech</option>
-                              <option value="Total Logistics">Total Logistics</option>
-                              <option value="Brodewei">Brodewei</option>
-                              <option value="Center Park">Center Park</option>
-                              <option value="Mech. Entreprise">Mech. Entreprise</option>
-                              <option value="Club Mad">Club Mad</option>
-                              <option value="Sport Center">Sport Center</option>
-                              <option value="Leonard Construction">Leonard Construction</option>
-                              <option value="Doua Postal">Doua Postal</option>
-                              <option value="ORPIste">ORPIste</option>
-                              <option value="Palais des Congrès">Palais des Congrès</option>
-                              <option value="Airboost">Airboost</option>
-                              <option value="Lion Formation">Lion Formation</option>
-                              <option value="Pedro de Fermat">Pedro de Fermat</option>
-                              <option value="Badison Square Garden">Badison Square Garden</option>
-                              <option value="Formula One">Formula One</option>
-
-                          </select>  
-                     
-    <input type ="button" onclick="confirm('Le Checkin est tout simple à réaliser!!!');" value="Checkin"/>
-</div>
-<div data-role="footer">
-    <h4 class="argent_dispo" style="color:#D6B430"></h4>
-</div>
-</div>
-
-  <!-- Mission Capacité-->
-  <div data-role="page" id="missionCapacite">
-    
-    <div data-role="header">
-      <a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
-      <h1>Mission Capacité</h1>
-    </div>
-
- <div data-role="content">
- 	<input type ="button" onclick="confirm('Attention jeune trader, tu dois être président afin de fixer la charge de ta société!!');" value="Capacite"/>
- </div>
-  
-  <div data-role="footer" data-position="fixed">
-      <h4 class="argent_dispo" style="color:#D6B430"></h4>
-  </div>
-</div>
-       
-        <!--Mission emprunt  -->
-  <div data-role="page" id="emprunt">
-	<div data-role="header">
-		<a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
-    	<h1>BMC Investment</h1>
-	</div>
-	<div data-role="content">
-    	<form>
-            <ul data-role="listview" data-inset="true">
-                <li class="ui-field-contain">
-                  <div style="width:50%; display:inline-block">
-                  TEG (en ฿)
-                  </div>
-                  <div style="width:50%; display:inline-block">
-                    <textarea cols="40" rows="8" name="textarea" id="TEG" style="resize:none; height:50px;" disabled>
-                    </textarea>
-                  </div>
-                   </li>
-                <li class="ui-field-contain">
-                    <label for="somme_emprunt">Somme souhaitée (en ฿)
-                    </label>
-                    <input type="range" name="slider-emprunt" id="somme_emprunt" value="1" min="1" max="100">
-                </li>
-                <li class="ui-field-contain">
-                    <label for="duree_emprunt">Durée de remboursement (en jours)
-                    </label>
-                    <input type="range" name="duree_emprunt" id="duree_emprunt" value="1" min="1" max="30">            
-                </li>
-            </ul> 
-                <input type="button" value="Emprunter" id="saisie_emprunt" onclick="confirm('N'oublies pas que pour réaliser un emprunt il faut être à la BMC!!!')"/>
-		</form>
-	</div>
-<div data-role="footer">
-    <h4 class="argent_dispo" style="color:#D6B430"></h4>
-</div>
-</div>
-
-  <!-- Mission Capacité-->
-  <div data-role="page" id="missionCapacite">
-    
-    <div data-role="header">
-      <a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
-      <h1>Mission Capacité</h1>
-    </div>
-
- <div data-role="content">
- 	<input type ="button" onclick="confirm('Attention jeune trader, tu dois être président afin de fixer la charge de ta société!!');" value="Capacite"/>
- </div>
-  
-  <div data-role="footer" data-position="fixed">
-      <h4 class="argent_dispo" style="color:#D6B430"></h4>
-  </div>
-</div>
-
-
-  <!-- Mission Achat -->
- <div data-role="page" id="missionAchat">
-      <div data-role="header">
-      <a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
-        <h1>Mission Achat</h1>
-      </div>
- 
-    <div data-role="content">
-
-                  <!-- Nom de l'entreprise -->     
-                      
-                <label for="select-custom-100">Entreprise</label>
-                        <select name="select-custom-100" id="Selectentreprise" data-native-menu="false">
-                              <option value="Veuiller sélectionner une entreprise" selected="selected">Veuillez sélectionner une entreprise</option>
-                              <option value="Hill Tone">Hill Tone</option>
-                              <option value="Genius Electrics">Genius Electrics</option>
-                              <option value="SoTech Materials">SoTech Materials</option>
-                              <option value="ITech">ITech</option>
-                              <option value="Miam Inc.">Miam Inc.</option>
-                              <option value="Campanule">Campanule</option>
-                              <option value="Wilbedon & Co">Wilbedon & Co</option>
-                              <option value="Blue Telecom">Blue Telecom</option>
-                              <option value="Green Energy & Co">Green Energy & Co</option>
-                              <option value="Biotech">Biotech</option>
-                              <option value="Total Logistics">Total Logistics</option>
-                              <option value="Brodewei">Brodewei</option>
-                              <option value="Center Park">Center Park</option>
-                              <option value="Mech. Entreprise">Mech. Entreprise</option>
-                              <option value="Club Mad">Club Mad</option>
-                              <option value="Sport Center">Sport Center</option>
-                              <option value="Leonard Construction">Leonard Construction</option>
-                              <option value="Doua Postal">Doua Postal</option>
-                              <option value="ORPIste">ORPIste</option>
-                              <option value="Palais des Congrès">Palais des Congrès</option>
-                              <option value="Airboost">Airboost</option>
-                              <option value="Lion Formation">Lion Formation</option>
-                              <option value="Pedro de Fermat">Pedro de Fermat</option>
-                              <option value="Badison Square Garden">Badison Square Garden</option>
-                              <option value="Formula One">Formula One</option>
-
-                        </select>                        
-        
-
-          
-                <!-- Type d'ordre  -->
-                          
-                          <label for="select-custom-51">Type d'ordre</label>
-                          <select name="select-custom-51" id="selectordre" data-native-menu="false">
-                              <option value="Veuiller sélectionner un type d'ordre" selected="selected">Veuillez choisir un type d'ordre</option>
-                              <!--<option value="cours_limite" selected="selected">Ordre à cours limité</option>-->
-                              <option title="Ordre exécuté que si le cours du titre atteint ou dépasse le cours fixé." value="cours_limite" > Ordre à cours limité</option>
-                              <!--option value="au_marche">Ordre au marché </option>-->
-                              <option title="Ordre exécuté sans limite de prix, dans la limite des quantités disponibles." value="au_marche" >Ordre au marché</option>
-                              <!--option value="seuil_declenchement">Ordre à déclenchement </option>-->
-                              <option title="Ordre exécuté à partir d'un cours déterminé." value="seuil_declenchement" >Ordre a` déclenchement </option>
-                              <!--option value="meilleure_limite">Ordre à la meilleure limite</option>-->
-                              <option title="Ordre exécuté  au prix du premier vendeur, dans la limite des quantités disponibles." value="meilleure_limite" > Ordre à la meilleure limite</option>
-
-                          </select>
-                      
-                      
-                     <ul data-role="listview" data-inset="true">
-                      
-                <!--PRIX-->        
-                         <span TITLE="Prix">Veuillez saisir le prix que vous êtes prêt à investir dans cette transaction</span>           
-                         <li class="ui-field-contain">
-                            <div>
-                            <label for="Prix">Prix (en ฿)</label>
-                            <input type="number" name="number" id="Prix" value=""  /> 
-                             </div>
-                             <div id="consult_argentDisp">
-                             </div>
-                          </li>  
-                          
-                <!--TYPE DE DECLENCHEMENT-->  
-                        <!--  <span TITLE="Type de déclenchement">Veuillez choisir le type de déclenchement souhaité</span> -->                
-                          <li class="ui-field-contain" style="display:none;" id="declenchement">
-                            <fieldset data-role="controlgroup" data-type="horizontal" style="border:none;" id="typedeclenchement">
-                                <legend>Type de déclenchement</legend>
-                                <input type="radio" name="radio-choice-type-declenchement" id="radio-choice-h-2a" value="Seuil" checked="checked">
-                                <label for="radio-choice-h-2a">Seuil</label>
-                                <input type="radio" name="radio-choice-type-declenchement" id="radio-choice-h-2b" value="Plage">
-                                <label for="radio-choice-h-2b">Plage</label>
-                            </fieldset>  
-                                                    
-                <!--SAISIE DU SEUIL OU DE LA PLAGE-->    
-
-                   <!--SAISIE DU SEUIL-->    
-      
-                            <label for="vseuil" style="margin-top:10px;"id="vseuillabel">Saisir le seuil
-                            </label>
-                            <textarea cols="40" rows="8" name="textarea" id="vseuil" style="width:80px; height:40px; resize:none;  margin-top:10px;">
-                            </textarea>  
-
-                    <!--SAISIE DE LA PLAGE-->    
-                            
-                            <div data-role="rangeslider" style="margin-top:10px; display:none;" id="vplage">
-                              <label for="range-10a" id="vplagelabel" style="display:none; margin-top:10px;">Saisir la plage
-                                </label>
-                                <input type="range" name="range-10a" id="range-10a" min="0" max="100" step=".01" value="0">
-                                <label for="range-10b">Saisir la plage
-                                </label>
-                                <input type="range" name="range-10b" id="range-10b" min="0" max="100" step=".01" value="100">
-                              </div>
-                          
-                          </li>
-                    <!--NOMBRE-->
-                         <span TITLE="NbAction">Veuillez saisir le nombre d'action souhaité</span>
-                         <li class="ui-field-contain">
-                              <label for="Nombre">Nombre</label>
-                              <input type="range" name="slider" id="Nombre" value="1" min="1" max="100"  />
-                          </li>
-                          
-                <!--Date de validite-->
-                          <span TITLE="DateValidité">Veuillez choisir la date limite à laquelle votre ordre sera toujours valide</span>
-                          <li class="ui-field-contain">                 
-                              <fieldset data-role="controlgroup" data-type="horizontal" data-mini="false" id="validite" style="border:none">
-                                  <legend>Date de validité</legend>
-                                  <input type="radio" name="radio-choice-type-date" id="radio-choice-1" value="Aujourdhui" checked="true" >
-                                  <label for="radio-choice-1">Aujourd'hui</label>
-                                  <input type="radio" name="radio-choice-type-date" id="radio-choice-2" value="Date">
-                                  <label for="radio-choice-2">Date</label>
-                                  <input type="radio" name="radio-choice-type-date" id="radio-choice-3" value="Révocation">
-                                  <label for="radio-choice-3">Révocation</label>
-                              </fieldset>
-                              
-                <!-- Date Picker -->
-                              
-                              <div style="margin-top:10px">
-                                  <label for="saisiedate" id="legendedate"></label>
-                                  <input type="text" id="saisiedate" data-inline="false"  data-role="date">
-                              </div>
-                          </li>
-                      </ul>
-                      
-                <!-- Bouton d'envoi -->
-                      
-                       <div class="ui-field-contain">
-                          <input type="button" value="Valider" onclick="confirm('Bravo jeune Trader!! Maintenant tu connais toutes les étapes pour acheter des actions!!')" />
-
-      </div>
-     
-    </div>
-</div> 
-   
-    
     
 <!-- Carte -->
 
@@ -794,7 +329,7 @@ Bienvenue apprentis traders !
                     </li>            
                     <li><a href="#infosMesTransactions" data-ajax="false">Transactions</a>
                     </li>
-                    <li><a href="#infosMaSociete" data-ajax="false">Société</a>
+                    <li><a href="#infosMaSociete" data-ajax="false">Société</a>
                     </li>
                     <li><a href="#infosMaVitrine" data-ajax="false">Ma vitrine</a>
                     </li>
@@ -815,16 +350,16 @@ Bienvenue apprentis traders !
             <div id="mouvant1">
             	<h3>Description</h3>
 				<div id="affiche_description" class="tdb" style="padding-left:7px; padding-right:7px;"></div>
-				<h3>Informations générales</h3>
+				<h3>Informations générales</h3>
                 <div id="infos_generales" class="tdb" >
                     <div class="ui-grid-a">
                         <div class="ui-block-a" style="padding-left:10%">Sexe</div>
                         <div class="ui-block-b" id="affiche_sexe"></div>
-                        <div class="ui-block-a" style="padding-left:10%">Année d'étude</div>
+                        <div class="ui-block-a" style="padding-left:10%">Année d'étude</div>
                         <div class="ui-block-b" id="affiche_etude"></div>
-                        <div class="ui-block-a" style="padding-left:10%">Département</div>
+                        <div class="ui-block-a" style="padding-left:10%">Département</div>
                         <div class="ui-block-b" id="affiche_depart"></div>
-                        <div class="ui-block-a" style="padding-left:10%">Société d'invest.</div>
+                        <div class="ui-block-a" style="padding-left:10%">Société d'invest.</div>
                         <div class="ui-block-b" id="affiche_societe"></div> 
                         <div class="ui-block-a" style="padding-left:10%">Statut</div>
                         <div class="ui-block-b" id="affiche_statut"></div> 
@@ -845,11 +380,11 @@ Bienvenue apprentis traders !
 				<h3> Statut d'investisseur</h3>
                 <div id="infos_finance" class="tdb">
                     <div class="ui-grid-a">
-                        <div class="ui-block-a" style="padding-left:10%">Actions achetées</div>
+                        <div class="ui-block-a" style="padding-left:10%">Actions achetées</div>
                         <div class="ui-block-b" id="affiche_actionsAchetees"></div>
                         <div class="ui-block-a" style="padding-left:10%">Actions vendues</div>
                         <div class="ui-block-b" id="affiche_actionsVendues"></div>
-                        <div class="ui-block-a" style="padding-left:10%">Actions possédées</div>
+                        <div class="ui-block-a" style="padding-left:10%">Actions possédées</div>
                         <div class="ui-block-b" id="affiche_actionsPossedees"></div>
                         <div class="ui-block-a" style="padding-left:10%">Ordres en attente</div>
                         <div class="ui-block-b" id="affiche_ordre"></div>                        
@@ -905,11 +440,11 @@ Bienvenue apprentis traders !
 						<option value="choose-one" data-placeholder="true">Sexe</option>
 						<option value="Homme">Homme</option>
 						<option value="Femme">Femme</option>
-						<option value="Non renseigné">Non renseigné</option>
+						<option value="Non renseigné">Non renseigné</option>
 					</select>
 					
 					<select name="select-custom2" id="choix_annee" data-native-menu="false">
-						<option value="choose-one" data-placeholder="true">Année</option>
+						<option value="choose-one" data-placeholder="true">Année</option>
 						<option value="1A">1A</option>
 						<option value="2A">2A</option>
 						<option value="3A">3A</option>
@@ -918,7 +453,7 @@ Bienvenue apprentis traders !
 						<option value="Autre">Autre</option>
 					</select>
 					<select name="select-custom3" id="choix_depart" data-native-menu="false">
-						<option value="choose-one" data-placeholder="true">Département</option>
+						<option value="choose-one" data-placeholder="true">Département</option>
                         <option value="PC">PC</option>
 						<option value="GI">GI</option>
 						<option value="BB">BB</option>
@@ -946,14 +481,14 @@ Bienvenue apprentis traders !
     <div id="infosMesTransactions" style="margin-top:15px">
 		<label for="choix_transaction">Suivi des transactions</label>
 		<select name="choix_transaction" id="choix_transaction" data-native-menu="false">
-            <option value="choose-one" data-placeholder="true">Sélectionner l'opération</option>
+            <option value="choose-one" data-placeholder="true">Sélectionner l'opération</option>
             <option value="1" id="mesActions">Mes actions</option>
             <option value="2" id="mesOrdres">Mes ordres en attente</option>
             <option value="3" id="mesEmprunts">Mes emprunts</option>
     	</select>
         
         <div id="mouvant11" style="display:none">
-        <table id="table_ordre" data-role="table" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe" data-column-btn-theme="a" data-column-btn-text="Colonnes à afficher...">
+        <table id="table_ordre" data-role="table" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe" data-column-btn-theme="a" data-column-btn-text="Colonnes à afficher...">
             <thead>
                 <tr class="ui-bar-a">
                     <th>Date</th>
@@ -972,7 +507,7 @@ Bienvenue apprentis traders !
         </table>
 		</div>
 		<div id="mouvant12" style="display:none">
-        <table id="table_emprunt" data-role="table" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe" data-column-btn-theme="a" data-column-btn-text="Colonnes à afficher...">
+        <table id="table_emprunt" data-role="table" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe" data-column-btn-theme="a" data-column-btn-text="Colonnes à afficher...">
             <thead>
                 <tr class="ui-bar-a">
                     <th>Date</th>
@@ -1004,7 +539,7 @@ Bienvenue apprentis traders !
         </table>
         </div>
 	</div>	
-    <!-- Onglet ma société -->
+    <!-- Onglet ma société -->
     <div id="infosMaSociete">
     	<div data-role="content">
     	            <div id="presentation_statique_societe">
@@ -1021,18 +556,18 @@ Bienvenue apprentis traders !
                 </div>
             	<h3>Description</h3>
 				<div id="affiche_descriptionSociete" class="tdb" style="padding-left:7px; padding-right:7px;"></div>
-				<h3>Informations générales</h3>
+				<h3>Informations générales</h3>
                 <div id="infos_generalesSociete" class="tdb" >
                     <div class="ui-grid-a">
                     
 						<div class="ui-block-a" style="padding-left:10%">Rang</div>
                         <div class="ui-block-b" id="affiche_rangSociete"></div>
                          
-                        <div class="ui-block-a" style="padding-left:10%">Liquidité</div>                    
+                        <div class="ui-block-a" style="padding-left:10%">Liquidité</div>                    
                         <div class="ui-block-b" id="affiche_liquiditeSociete"></div>
                        
-                        <div class="ui-block-a" style="padding-left:10%">Actions achetées</div>
-                        <div class="ui-block-b" id="affiche_actionsAchetéesSociete"></div>
+                        <div class="ui-block-a" style="padding-left:10%">Actions achetées</div>
+                        <div class="ui-block-b" id="affiche_actionsAchetéesSociete"></div>
                         <div class="ui-block-a" style="padding-left:10%">Actions vendues</div>
                         <div class="ui-block-b" id="affiche_actionsVenduesSociete"></div> 
                         <div class="ui-block-a" style="padding-left:10%">Ordres en cours</div>
@@ -1084,9 +619,9 @@ Bienvenue apprentis traders !
                 <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="exclureMembre" style="display:none">Exclure membre</a>   
 			</div> 
             <div data-role="popup" id="choixChangerStatut" data-theme="a" class="ui-content" style="max-width:340px; padding-bottom:2em;">
-              <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="nommerVicePresident" style="display:none">Nommer Vice-Président</a>
-              <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="retirerTitreVicePresident" style="display:none"> Retirer titre de Vice-Président </a>
-              <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="nommerPresident">Nommer Président</a>
+              <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="nommerVicePresident" style="display:none">Nommer Vice-Président</a>
+              <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="retirerTitreVicePresident" style="display:none"> Retirer titre de Vice-Président </a>
+              <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="nommerPresident">Nommer Président</a>
               <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="retourChoixChangerStatut">Retour</a>
            </div>
            
@@ -1149,9 +684,9 @@ Bienvenue apprentis traders !
         </div>
         <div id="rangeCapacite" style="display:none"
          >
-		<label for="newCapacite">Fixer la capacité</label>
+		<label for="newCapacite">Fixer la capacité</label>
 		  <input type="number" name="newCapacite" id="newCapacite" value=""  />
-         <button id="btn_modif_capa">Enregistrer les capacités</button>
+         <button id="btn_modif_capa">Enregistrer les capacités</button>
         <table id="table_capacite" data-role="table" data-mode="columtoggle" class="ui-body-d ui-shadow table-stripe">
         	<thead>
             	<tr class="ui-bar-a">
@@ -1167,13 +702,13 @@ Bienvenue apprentis traders !
        
         </div>
         <div id="dissolutionSociete">
-		<a href="#confirmerDissoudre" data-rel="popup" class="ui-shadow ui-btn ui-corner-all">Dissoudre la société</a>
+		<a href="#confirmerDissoudre" data-rel="popup" class="ui-shadow ui-btn ui-corner-all">Dissoudre la société</a>
         </div>
 
        <div data-role="popup" id="confirmerDissoudre" data-theme="a" class="ui-content" style="max-width:340px; padding-bottom:2em;">
             <h2>Etes-vous sur de dissoudre l'entreprise ?</h2>
             <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="dissoudreSociete">Oui</a>
-            <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="pasDissoudreSociete">Non, je déconne</a>   
+            <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="pasDissoudreSociete">Non, je déconne</a>   
         </div> 
         
     </div>
@@ -1216,7 +751,7 @@ Bienvenue apprentis traders !
      <label for="choix_descriptionSociete">Modifier la description</label>
           <input type="text" name="textinput" value="" maxlength="140" id="choix_descriptionSociete"  />
         <button id="btn_modif_infoSociete">Enregistrer la description</button>
-        <label for="choix_nomSociete">Modifier le nom de la société</label>
+        <label for="choix_nomSociete">Modifier le nom de la société</label>
           <input type="text" name="textinput" value="" maxlength="140" id="choix_nomSociete"  />
         <button id="btn_modif_nomSociete">Enregistrer le nouveau nom</button>
         
@@ -1227,7 +762,7 @@ Bienvenue apprentis traders !
             </div>
             
             <form>
-            	<input type="submit" value="Changer l'avatar de la société" id="changer_avatar_societe"/>
+            	<input type="submit" value="Changer l'avatar de la société" id="changer_avatar_societe"/>
 			</form>
 	</div>
 
@@ -1251,27 +786,27 @@ Bienvenue apprentis traders !
               <div data-role="navbar" id="navbar_chat" style="z-index:1;width:100%">
                   <ul>
                       <li><a href="#Tchat_global" data-ajax="false">Global</a></li>
-                      <li><a href="#Tchat_prive" data-ajax="false">Privé</a></li>  
-                      <li><a id="tab_tchat_societe" href="#Tchat_societe" data-ajax="false">Tchat société d'investissement</a></li>  
+                      <li><a href="#Tchat_prive" data-ajax="false">Privé</a></li>  
+                      <li><a id="tab_tchat_societe" href="#Tchat_societe" data-ajax="false">Tchat société d'investissement</a></li>  
                   </ul>
               </div>
       			
             <!--  Chat  Global-->
             	<div id="Tchat_global">
-                  	<!--  Div où les messages vont s'afficher-->
+                  	<!--  Div où les messages vont s'afficher-->
                 	<div id="div_champs_chat">
-                    	<!-- div invisible pour régler le problème de padding ne fonctionnant pas (le texte s'affiche sous les tabs) -->
+                    	<!-- div invisible pour régler le problème de padding ne fonctionnant pas (le texte s'affiche sous les tabs) -->
                     	<div class='chat_blank' style="height : 40px"> 
                         </div>
                     </div>
-                    <!-- Bas de l'écran  -->
+                    <!-- Bas de l'écran  -->
                     <div class="div_chat_send">
                         <form id="send_chatmessage_form" data-ajax="false">
                        		<!-- zonne de saisie du texte -->
                             <div class="champ_texte_chat">
                                 <input type="text" name="message_input" id="message_input" value="" /> 
                             </div>
-                            <!-- icône d'envoi -->
+                            <!-- icône d'envoi -->
                             <div class="send_icon">
                             	<input type="image" id="send_chatmessage"  src="img/send.png" /> 
                             </div>   
@@ -1279,21 +814,21 @@ Bienvenue apprentis traders !
                     </div>
             	</div>
                 
-                <!-- Messagerie privée -->
+                <!-- Messagerie privée -->
             	<div id="Tchat_prive">
-                	<!-- Popup s'ouvrant lors de la création d'un nouveau fil de conversation -->
+                	<!-- Popup s'ouvrant lors de la création d'un nouveau fil de conversation -->
                 	<div data-role="popup" id="popupmess" data-overlay-theme="b" data-theme="b" data-corners="false" data-tolerance="15,15" style=" padding-bottom:30px;width:90%;height:80%; max-width:100%;">
 					<a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
                    				<!-- Champs de recherche du destinataire -->
 								<form id="search_destinataire" data-ajax="false">
         							<input type="search"  id="destinataire_entre" value="" />
             					</form>
-                                <!-- Endroit où l'on affiche le destinataire -->
+                                <!-- Endroit où l'on affiche le destinataire -->
         						<div id="div_destinataire">
             						<b>Destinataire :</b>  <div id="destinataire"></div>
                                     <br/>
             					</div>
-                                 <!-- Champs texte pour le message privé -->
+                                 <!-- Champs texte pour le message privé -->
                                 <form id="send_private_message" data-ajax="false" style="height:inherit;">
                                 	<div id="div_message">                		
             							<label for="private_message">Message :</label>
@@ -1318,22 +853,22 @@ Bienvenue apprentis traders !
                             
                         </div>
             	
-                 <!-- Tchat société -->
+                 <!-- Tchat société -->
                 <div id="Tchat_societe">
-            		<!--  Div où les messages vont s'afficher-->
+            		<!--  Div où les messages vont s'afficher-->
                 	<div id="div_champs_chatSociete">
-                    	<!-- div invisible pour régler le problème de padding ne fonctionnant pas (le texte s'affiche sous les tabs) -->
+                    	<!-- div invisible pour régler le problème de padding ne fonctionnant pas (le texte s'affiche sous les tabs) -->
                     	<div class='chat_blank' style="height : 40px"> 
                         </div>
                     </div>
-                    <!-- Bas de l'écran  -->
+                    <!-- Bas de l'écran  -->
                     <div class="div_chat_send">
                         <form id="send_messageSociete_form" data-ajax="false">
                        		<!-- zonne de saisie du texte -->
                             <div class="champ_texte_chat">
                                 <input type="text" name="message_input" id="message_societe_input" value="" /> 
                             </div>
-                            <!-- icône d'envoi -->
+                            <!-- icône d'envoi -->
                             <div class="send_icon">
                             	<input type="image" id="send_message_societe"  src="img/send.png" /> 
                             </div>   
@@ -1343,7 +878,7 @@ Bienvenue apprentis traders !
       		</div>
     </div>
     
-    <!-- Page tchat privé -->
+    <!-- Page tchat privé -->
     <div data-role="page" id="tchat_perso">
       <div  data-role="header" data-position="fixed" data-tap-toggle="false" style="border-bottom-width: 0px;">
         <a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
@@ -1351,19 +886,19 @@ Bienvenue apprentis traders !
         <h1 id="titre_tchat_perso"></h1>
       </div>
       <div data-role="content">
-      	<!--  Div où les messages vont s'afficher-->
+      	<!--  Div où les messages vont s'afficher-->
         <div id="div_champs_messagerie">
 
             
         </div>
-        <!-- Bas de l'écran  -->
+        <!-- Bas de l'écran  -->
         <div class="div_chat_send" style="left:0;">
             <form id="send_message_prive_form" data-ajax="false">
                 <!-- zonne de saisie du texte -->
                 <div class="champ_texte_chat">
                     <input type="text" name="message_input" id="message_prive_input" value="" /> 
                 </div>
-                <!-- icône d'envoi -->
+                <!-- icône d'envoi -->
                 <div class="send_icon">
                 <input type="image" id="send_chat_private_message"  src="img/send.png" /> 
                 </div>   
@@ -1408,7 +943,7 @@ margin: 0 auto; margin-top:4px">
                           </p>
                       </div>
                       <div data-role="collapsible">
-                          <h3>Actualités</h3>
+                          <h3>Actualités</h3>
                           <div id="texte_actualites_entreprise">                            
                           </div>
                       </div>
@@ -1419,7 +954,7 @@ margin: 0 auto; margin-top:4px">
             
               <div id="Performance">
               <div class="ui-content">
-				<h3>Exercice précédent</h3>
+				<h3>Exercice précédent</h3>
                 <div id="infosExPrec" class="tdb" >
                     <div class="ui-grid-a">
                         <div class="ui-block-a" style="padding-left:10%">Dividende/titre : </div>
@@ -1443,7 +978,7 @@ margin: 0 auto; margin-top:4px">
   				<div id="placeholder" style="width:90%;height:250px; margin-top:15px">
   				</div>
   				<button id="today">Aujourd'hui</button>
-  				<button id="lastweek">Dernière semaine</button>
+  				<button id="lastweek">Dernière semaine</button>
 				<button id="lastmonth">Dernier mois</button>
               </div>
               </div>
@@ -1474,10 +1009,10 @@ margin: 0 auto; margin-top:4px">
                       
                           <label for="select-custom-18">Type d'ordre</label>
                           <select name="select-custom-18" id="selectordre" data-native-menu="false">
-                              <option value="cours_limite" selected="selected">Ordre à cours limité</option>
-                              <option value="au_marche">Ordre au marché </option>
-                              <option value="seuil_declenchement">Ordre à déclenchement </option>
-                              <option value="meilleure_limite">Ordre à la meilleure limite</option>
+                              <option value="cours_limite" selected="selected">Ordre à cours limité</option>
+                              <option value="au_marche">Ordre au marché </option>
+                              <option value="seuil_declenchement">Ordre à déclenchement </option>
+                              <option value="meilleure_limite">Ordre à la meilleure limite</option>
                           </select>
                       
  <!-- Listview qui contient PRIX, NOMBRE et DATE DE VALIDITE  -->
@@ -1497,7 +1032,7 @@ margin: 0 auto; margin-top:4px">
 		<!--TYPE DE DECLENCHEMENT-->                   
                           <li class="ui-field-contain" style="display:none;" id="declenchement">
                             <fieldset data-role="controlgroup" data-type="horizontal" style="border:none;" id="typedeclenchement">
-                                <legend>Type de déclenchement</legend>
+                                <legend>Type de déclenchement</legend>
                                 <input type="radio" name="radio-choice-type-declenchement" id="radio-choice-h-2a" value="Seuil" checked="checked">
                                 <label for="radio-choice-h-2a">Seuil</label>
                                 <input type="radio" name="radio-choice-type-declenchement" id="radio-choice-h-2b" value="Plage">
@@ -1536,13 +1071,13 @@ margin: 0 auto; margin-top:4px">
                           
                           <li class="ui-field-contain">                 
                               <fieldset data-role="controlgroup" data-type="horizontal" data-mini="false" id="validite" style="border:none">
-                                  <legend>Date de validité</legend>
+                                  <legend>Date de validité</legend>
                                   <input type="radio" name="radio-choice-type-date" id="radio-choice-1" value="Aujourdhui" checked="true" >
                                   <label for="radio-choice-1">Aujourd'hui</label>
                                   <input type="radio" name="radio-choice-type-date" id="radio-choice-2" value="Date">
                                   <label for="radio-choice-2">Date</label>
-                                  <input type="radio" name="radio-choice-type-date" id="radio-choice-3" value="Révocation">
-                                  <label for="radio-choice-3">Révocation</label>
+                                  <input type="radio" name="radio-choice-type-date" id="radio-choice-3" value="Révocation">
+                                  <label for="radio-choice-3">Révocation</label>
                               </fieldset>
                               
       <!-- Date Picker -->
@@ -1654,22 +1189,21 @@ margin: 0 auto; margin-top:4px ">
         </div>
         <div id="atouts">
         <div data-role="content">
-        	Contenu à venir...
+        	Contenu à venir...
                 <!--<label for="boutique_atout">Avantage temporaire</label>
 <select name="boutique_atout" id="boutique_atout" data-native-menu="false">
                     <option value="choose-one" data-placeholder="true">Choisis un atout</option>
-                    <option value="1">Réduction de 10% à l’achat d’une action</option>
+                    <option value="1">Réduction de 10% à l’achat d’une action</option>
                     <option value="2">Majoration de 10% faite au joueur lors de la vente d’une action</option>
-                    <option value="3">Augmentation de 10% du dividende reversé au prochain bilan</option>
-                    <option value="4">Prochain emprunt réalisé avec le statut d’emprunteur A</option>
-                    <option value="5">Prochain emprunt réalisé à taux 0%</option>
-                    <option value="6">Ajout d’un emprunt supplémentaire à la limite autorisée</option>
+                    <option value="3">Augmentation de 10% du dividende reversé au prochain bilan</option>
+                    <option value="4">Prochain emprunt réalisé avec le statut d’emprunteur A</option>
+                    <option value="5">Prochain emprunt réalisé à taux 0%</option>
+                    <option value="6">Ajout d’un emprunt supplémentaire à la limite autorisée</option>
                     <option value="7">Achat d’une action sans se trouver physiquement sur le campus</option>
                     <option value="8">Vente d’une action sans se trouver physiquement sur le campus</option>
-                    <option value="9">Achat d’une action supplémentaire à limite autorisée</option>
+                    <option value="9">Achat d’une action supplémentaire à limite autorisée</option>
 </select>
 <input type="submit" value="Acheter" id="acheter_atout">
-
 -->
 		</div>
     	<div data-role="footer">
@@ -1679,7 +1213,7 @@ margin: 0 auto; margin-top:4px ">
 	</div>
     </div>
 
-<!-- Recherche membre ou société -->
+<!-- Recherche membre ou société -->
 <div data-role="page" id="rechercher">
   <div data-role="header">
   	<a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
@@ -1691,7 +1225,7 @@ margin: 0 auto; margin-top:4px ">
                 <ul>
                         <li><a href="#rechercher_joueur" data-ajax="false">Joueur</a>
                         </li>            
-                        <li><a href="#rechercher_societe" data-ajax="false">Société d'investissement</a>
+                        <li><a href="#rechercher_societe" data-ajax="false">Société d'investissement</a>
                         </li>
                 </ul>
             </div>
@@ -1705,7 +1239,7 @@ margin: 0 auto; margin-top:4px ">
             </div>
             <div id="rechercher_societe">
             	<form id="search_societe_form" data-ajax="false">
-   					<input type="search" placeholder="Rechercher une société d'investissement"  id="societe_entre" value="" />
+   					<input type="search" placeholder="Rechercher une société d'investissement"  id="societe_entre" value="" />
   				</form>
                 	<ul id="ul_result_search_societe"  data-role="listview" data-theme="a" data-dividertheme="a" data-filter="false">
                     </ul>
@@ -1716,7 +1250,7 @@ margin: 0 auto; margin-top:4px ">
 	</div>
   </div>
   
-  <!-- Profil extérieur joueur -->
+  <!-- Profil extérieur joueur -->
   <div data-role="page" id="profil_exterieur_joueur">
     <div data-role="header">
     <a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
@@ -1731,7 +1265,7 @@ margin: 0 auto; margin-top:4px ">
                         
                         <li><a href="#infos_vitrine_exterieur" data-ajax="false">Vitrine</a>
                         </li>
-                        <li><a href="#infos_societe_joueur_exterieur" data-ajax="false">Société</a>
+                        <li><a href="#infos_societe_joueur_exterieur" data-ajax="false">Société</a>
                         </li>
                 </ul>
             </div>
@@ -1750,16 +1284,16 @@ margin: 0 auto; margin-top:4px ">
                 <div id="mouvant1_exterieur">
                     <h3>Description</h3>
                     <div id="affiche_description_exterieur" class="tdb" style="padding-left:7px; padding-right:7px;"></div>
-                    <h3>Informations générales</h3>
+                    <h3>Informations générales</h3>
                     <div id="infos_generales_exterieur" class="tdb" >
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="padding-left:10%">Sexe</div>
                             <div class="ui-block-b" id="affiche_sexe_exterieur"></div>
-                            <div class="ui-block-a" style="padding-left:10%">Année d'étude</div>
+                            <div class="ui-block-a" style="padding-left:10%">Année d'étude</div>
                             <div class="ui-block-b" id="affiche_etude_exterieur"></div>
-                            <div class="ui-block-a" style="padding-left:10%">Département</div>
+                            <div class="ui-block-a" style="padding-left:10%">Département</div>
                             <div class="ui-block-b" id="affiche_depart_exterieur"></div>
-                            <div class="ui-block-a" style="padding-left:10%">Société d'invest.</div>
+                            <div class="ui-block-a" style="padding-left:10%">Société d'invest.</div>
                             <div class="ui-block-b" id="affiche_societe_exterieur"></div> 
                             <div class="ui-block-a" style="padding-left:10%">Statut</div>
                         	<div class="ui-block-b" id="affiche_statut_exterieur"></div> 
@@ -1772,11 +1306,11 @@ margin: 0 auto; margin-top:4px ">
                     <h3>Statut d'investisseur</h3>
                     <div id="infos_finance_exterieur" class="tdb">
                         <div class="ui-grid-a">
-                            <div class="ui-block-a" style="padding-left:10%">Actions achetées</div>
+                            <div class="ui-block-a" style="padding-left:10%">Actions achetées</div>
                             <div class="ui-block-b" id="affiche_actionsAchetees_exterieur"></div>
                             <div class="ui-block-a" style="padding-left:10%">Actions vendues</div>
                             <div class="ui-block-b" id="affiche_actionsVendues_exterieur"></div>
-                            <div class="ui-block-a" style="padding-left:10%">Actions possédées</div>
+                            <div class="ui-block-a" style="padding-left:10%">Actions possédées</div>
                             <div class="ui-block-b" id="affiche_actionsPossedees_exterieur"></div>                       
                         </div>
                     </div>                 
@@ -1832,18 +1366,18 @@ margin: 0 auto; margin-top:4px ">
                 </div>
             	<h3>Description</h3>
 				<div id="affiche_descriptionSociete_societe_joueur_exterieur" class="tdb" style="padding-left:7px; padding-right:7px;"></div>
-				<h3>Informations générales</h3>
+				<h3>Informations générales</h3>
                 <div id="infos_generalesSociete_societe_joueur_exterieur" class="tdb" >
                     <div class="ui-grid-a">
                     
 						<div class="ui-block-a" style="padding-left:10%">Rang</div>
                         <div class="ui-block-b" id="affiche_rangSociete_societe_joueur_exterieur"></div>
                          
-                        <div class="ui-block-a" style="padding-left:10%">Liquidité</div>                    
+                        <div class="ui-block-a" style="padding-left:10%">Liquidité</div>                    
                         <div class="ui-block-b" id="affiche_liquiditeSociete_societe_joueur_exterieur"></div>
                        
-                        <div class="ui-block-a" style="padding-left:10%">Actions achetées</div>
-                        <div class="ui-block-b" id="affiche_actionsAchetéesSociete_societe_joueur_exterieur"></div>
+                        <div class="ui-block-a" style="padding-left:10%">Actions achetées</div>
+                        <div class="ui-block-b" id="affiche_actionsAchetéesSociete_societe_joueur_exterieur"></div>
                         <div class="ui-block-a" style="padding-left:10%">Actions vendues</div>
                         <div class="ui-block-b" id="affiche_actionsVenduesSociete_societe_joueur_exterieur"></div> 
                         <div class="ui-block-a" style="padding-left:10%">Ordres en cours</div>
@@ -1869,12 +1403,12 @@ margin: 0 auto; margin-top:4px ">
             <div id="tableau maj_societe_joueur_exterieur">
             </div>
             <div id="bouton_rejoindre_societe_joueur_exterieur">
-				<button id="rejoindre_societe_joueur_exterieur">Rejoindre société d'investissement</button>
+				<button id="rejoindre_societe_joueur_exterieur">Rejoindre société d'investissement</button>
             </div> 
             <div data-role="popup" id="confirmer_rejoindre_societe_joueur_exterieur" data-theme="a" class="ui-content" style="max-width:340px; padding-bottom:2em;">
-				<h2>Etes-vous sur de vouloir rejoindre cette société d'investissement?</h2>
+				<h2>Etes-vous sur de vouloir rejoindre cette société d'investissement?</h2>
                 <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="confirmerRejoindreSociete_joueur_exterieur">Oui</a>
-                <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="annulerRejoindreSociete_joueur_exterieur">Non, je reste dans ma société.</a>   
+                <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="annulerRejoindreSociete_joueur_exterieur">Non, je reste dans ma société.</a>   
 			</div> 
             
             </div>
@@ -1885,7 +1419,7 @@ margin: 0 auto; margin-top:4px ">
     
  
   
-  <!-- Profil extérieur société -->
+  <!-- Profil extérieur société -->
   <div data-role="page" id="profil_exterieur_societe">
     <div data-role="header">
     	<a href='#' data-rel="back" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext"></a>
@@ -1906,18 +1440,18 @@ margin: 0 auto; margin-top:4px ">
                 </div>
             	<h3>Description</h3>
 				<div id="affiche_descriptionSociete_societe_exterieur" class="tdb" style="padding-left:7px; padding-right:7px;"></div>
-				<h3>Informations générales</h3>
+				<h3>Informations générales</h3>
                 <div id="infos_generalesSociete_societe_exterieur" class="tdb" >
                     <div class="ui-grid-a">
                     
 						<div class="ui-block-a" style="padding-left:10%">Rang</div>
                         <div class="ui-block-b" id="affiche_rangSociete_societe_exterieur"></div>
                          
-                        <div class="ui-block-a" style="padding-left:10%">Liquidité</div>                    
+                        <div class="ui-block-a" style="padding-left:10%">Liquidité</div>                    
                         <div class="ui-block-b" id="affiche_liquiditeSociete_societe_exterieur"></div>
                        
-                        <div class="ui-block-a" style="padding-left:10%">Actions achetées</div>
-                        <div class="ui-block-b" id="affiche_actionsAchetéesSociete_societe_exterieur"></div>
+                        <div class="ui-block-a" style="padding-left:10%">Actions achetées</div>
+                        <div class="ui-block-b" id="affiche_actionsAchetéesSociete_societe_exterieur"></div>
                         <div class="ui-block-a" style="padding-left:10%">Actions vendues</div>
                         <div class="ui-block-b" id="affiche_actionsVenduesSociete_societe_exterieur"></div> 
                         <div class="ui-block-a" style="padding-left:10%">Ordres en cours</div>
@@ -1943,12 +1477,12 @@ margin: 0 auto; margin-top:4px ">
             <div id="tableau maj_societe_exterieur">
             </div>
             <div id="bouton_rejoindre_societe_exterieur">
-				<button id="rejoindre_societe_exterieur">Rejoindre société d'investissement</button>
+				<button id="rejoindre_societe_exterieur">Rejoindre société d'investissement</button>
             </div> 
             <div data-role="popup" id="confirmer_rejoindre_societe_exterieur" data-theme="a" class="ui-content" style="max-width:340px; padding-bottom:2em;">
-				<h2>Etes-vous sur de vouloir rejoindre cette société d'investissement?</h2>
+				<h2>Etes-vous sur de vouloir rejoindre cette société d'investissement?</h2>
                 <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="confirmerRejoindreSociete_exterieur">Oui</a>
-                <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="annulerRejoindreSociete_exterieur">Non, je reste dans ma société.</a>   
+                <a href="#" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="annulerRejoindreSociete_exterieur">Non, je reste dans ma société.</a>   
 			</div>
     </div>
   </div>
@@ -1986,13 +1520,13 @@ margin: 0 auto; margin-top:4px ">
         	</ul>
 		</div>
         <div id="collabsible_impots" class="collabsible_notifications" data-role="collapsible" data-theme="a">
-        	<h3>Impôts</h3>
+        	<h3>Impôts</h3>
    			<ul id="liste_notifications_impot" class="ui-listview" data-role="listview" data-theme="a" data-dividertheme="a" data-filter="false">
         	
         	</ul>
        	</div>
         <div id="collabsible_impots" class="collabsible_societe" data-role="collapsible" data-theme="a">
-            <h3>Société</h3>
+            <h3>Société</h3>
    			<ul id="liste_notifications_societe" class="ui-listview" data-role="listview" data-theme="a" data-dividertheme="a" data-filter="false">
         	
         	</ul>
@@ -2022,12 +1556,12 @@ margin: 0 auto; margin-top:4px ">
                   </div>
                 </li>
                 <li class="ui-field-contain">
-                    <label for="somme_emprunt">Somme souhaitée (en ฿)
+                    <label for="somme_emprunt">Somme souhaitée (en ฿)
                     </label>
                     <input type="range" name="slider-emprunt" id="somme_emprunt" value="1" min="1" max="100">
                 </li>
                 <li class="ui-field-contain">
-                    <label for="duree_emprunt">Durée de remboursement (en jours)
+                    <label for="duree_emprunt">Durée de remboursement (en jours)
                     </label>
                     <input type="range" name="duree_emprunt" id="duree_emprunt" value="1" min="1" max="30">            
                 </li>
@@ -2055,23 +1589,23 @@ margin: 0 auto; margin-top:4px ">
 		</div>  
 	</div>
 
-	<!--page mentions légales	-->
+	<!--page mentions légales	-->
 		<div data-role="page" id="MentionsLegales">
 			<div data-role="header">
-				<h1>Mentions légales</h1>
+				<h1>Mentions légales</h1>
 			</div>
 			<div data-role="content">
-                <p>  Selon les termes de la loi française, les données contenues dans ce site Internet constituent une oeuvre de l'esprit (notamment par la loi N° 92-157 du 1er juillet 1992). A ce titre, les droits d'exploitation, même partiels, de cette oeuvre sont détenus par l'INSA de Lyon. </p>
-                <p> La reproduction de tout ou partie de ce site sur un support électronique quel qu'il soit est formellement interdite sauf autorisation expresse du directeur de la publication. La reproduction des textes de ce site sur support papier est autorisée, tout particulièrement dans le cadre pédagogique, sous réserve du respect des trois conditions suivantes : <p>
-                <p>1- Gratuité de la diffusion</p>
-                <p>2- Respect de l'intégrité des documents reproduits : pas de modification ni altération d'aucune sorte</p>
+                <p>  Selon les termes de la loi française, les données contenues dans ce site Internet constituent une oeuvre de l'esprit (notamment par la loi N° 92-157 du 1er juillet 1992). A ce titre, les droits d'exploitation, même partiels, de cette oeuvre sont détenus par l'INSA de Lyon. </p>
+                <p> La reproduction de tout ou partie de ce site sur un support électronique quel qu'il soit est formellement interdite sauf autorisation expresse du directeur de la publication. La reproduction des textes de ce site sur support papier est autorisée, tout particulièrement dans le cadre pédagogique, sous réserve du respect des trois conditions suivantes : <p>
+                <p>1- Gratuité de la diffusion</p>
+                <p>2- Respect de l'intégrité des documents reproduits : pas de modification ni altération d'aucune sorte</p>
                 <p>3- Citation claire et lisible de la source sous la forme suivante - par exemple - "Ce document provient du site Internet <a href="http://m.scd.docinsa.insa-lyon.fr"> http://m.scd.docinsa.insa-lyon.fr</a>.</p>
-                <p>Les droits de reproduction sont réservés et strictement limités.</p>
+                <p>Les droits de reproduction sont réservés et strictement limités.</p>
                 <p>Directeur de la publication : Monique Joly, Directrice du SCD de l'INSA de Lyon.</p>
-                <p>Direction de projet : Guillemette Trognot et Marie-Paule Voïta, SCD Doc'INSA de l'INSA de Lyon.</p>
-                <p>Conception et développement : Equipe Bibacoeur, étudiants 4GI année 2013/2014.</p>
-                <p>Hébergement : Direction des Systèmes d'Informations de l'INSA de Lyon.</p>
-                <p>Crédits visuels : Direction de la Communication de l'INSA de Lyon</p>
+                <p>Direction de projet : Guillemette Trognot et Marie-Paule Voïta, SCD Doc'INSA de l'INSA de Lyon.</p>
+                <p>Conception et développement : Equipe Bibacoeur, étudiants 4GI année 2013/2014.</p>
+                <p>Hébergement : Direction des Systèmes d'Informations de l'INSA de Lyon.</p>
+                <p>Crédits visuels : Direction de la Communication de l'INSA de Lyon</p>
 			</div>
 			<div data-role="footer">
 				<h4>Pied de page</h4>
